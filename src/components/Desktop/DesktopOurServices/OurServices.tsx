@@ -12,8 +12,8 @@ export const DesktopOurServices = forwardRef<HTMLDivElement, {}>((props, ref) =>
           <CardsContainer>
               <ServiceCard
                   imgUrl={service1Image}
-                  title="Card Title 1"
-                  description="Card Description 1"
+                  title="استشارات اسرية"
+                  description="المركز يقدم خدمات لكل افراد الاسرة ويعنى بتزويد كل الآليات التي يحتاجها الفرد ضمن الاطر الاجتماعية كما ويعمل على دعم الأسر من الناحية الاجتماعية والتوعوية لدى الابناء والآباء كما يساهم المركز بتقديم الاستشارات العائلية اللازمة والحلول المساعدة  في التواصل والتعامل مع الابناء وبناء اسرة سعيدة ومتينة ومترابطة قادرة على حل المشكلات التي تواجهها في الحياة ضمن اساليب عصرية مدروسة ."
                   buttonUrl="/"
               />
               <ServiceCard
