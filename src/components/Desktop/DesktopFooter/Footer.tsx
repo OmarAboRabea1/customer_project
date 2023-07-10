@@ -1,25 +1,21 @@
 import React, { forwardRef } from 'react';
-import { Container, Footer_links, Footer_box, Footer_Container, Instagram_logo, Logo_box } from "./styles"
+import { Container, Footer_links, Footer_box, Footer_Container, Instagram_logo, Logo_box, IconContainer, FooterLine, RightsText, ContactButtons, Button, FooterContainer } from "./styles"
+import { FacebookIcon, InstagramIcon, WhatsappIcon } from '../DesktopSearchBar/styles';
 
 const DesktopFooter = forwardRef<HTMLDivElement, {}>((props, ref) => {
+    const currentYear = new Date().getFullYear();
+
     return(
-        <Container ref={ref}>
-            <Footer_Container>
-                <Footer_box>
-                    <Footer_links href="#"></Footer_links>
-                </Footer_box>
-                <Footer_box>
-                    <Footer_links href="https://www.instagram.com/faten_haj_issa/">
-                        <Logo_box>
-                            <Instagram_logo/>
-                        </Logo_box>
-                    </Footer_links>
-                </Footer_box>
-                <Footer_box>
-                    <Footer_links href="#"></Footer_links>
-                </Footer_box>
-            </Footer_Container>
-        </Container>
+        <FooterContainer ref={ref}>
+      <RightsText>All rights reserved: Omar Abo Rabea</RightsText>
+      <ContactButtons>
+        <IconContainer>
+            <FacebookIcon href="https://www.facebook.com"/>
+            <WhatsappIcon href="wa.me/+972547100240"/>
+            <InstagramIcon href="https://www.instagram.com/faten_haj_issa/"/>
+        </IconContainer>
+      </ContactButtons>
+        </FooterContainer>
 
     )
 });

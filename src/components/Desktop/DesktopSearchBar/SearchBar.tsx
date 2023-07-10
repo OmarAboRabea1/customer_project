@@ -30,8 +30,8 @@ export const DesktopSearchBar = ({scrollToOurServices}: {scrollToOurServices: ()
                     </ButtonContainer>
                     <IconContainer>
                         <FacebookIcon href="https://www.facebook.com"/>
-                        <WhatsappIcon href="https://www.twitter.com"/>
-                        <InstagramIcon href="https://www.instagram.com"/>
+                        <WhatsappIcon href="wa.me/+972547100240"/>
+                        <InstagramIcon href="https://www.instagram.com/faten_haj_issa/"/>
                     </IconContainer>
                 </HeroSection>
 

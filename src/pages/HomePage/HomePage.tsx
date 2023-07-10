@@ -47,10 +47,11 @@ const HomePage=()=>{
         <Container>
             {Number(windowSize!) < 1024 &&
                 <>
-                <NavBar/>
-                <SearchBar/>
-                <AboutUs/>
-                <Footer/>
+                <DesktopNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices}/>
+                <DesktopSearchBar scrollToOurServices={scrollToOurServices}/>
+                <DesktopOurServices ref={ourServicesRef}/>
+                <DesktopAboutUs ref={aboutUsRef}/>
+                <DesktopFooter ref={footerRef}/>
                 </>
             }           
             {Number(windowSize!) >= 1024 &&

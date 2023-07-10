@@ -10,9 +10,9 @@ export const DesktopAboutUs = forwardRef<HTMLDivElement, {}>((props, ref) => {
 
             <AboutUsimages>
             <AboutUsDesc>
-                <Title>ABOUT US:</Title>
-                <Title>I am Faten Haj Aesa, Graduated with B.A from Gordon Academy</Title>
-                <Title>Studying M.A in Managing</Title>
+                <Title>نبذة عنا</Title>
+                <Title>سمير ابوربيع: </Title>
+                <Title>حاصل على اللقب الاول في التربية اللا منهجية واللقب الثاني في الادارة التربوية وباحث دكتوراة في التنمية البشرية والارشاد الأسري، ومستشار في الارشاد الاسري والزوجي، اقدم تدريب للأفراد والعائلات والأزواج تشمل العديد من القضايا المختلفة مثل صعوبات العلاقات الزوجية والأسرية والذاتية ومشاكل التواصل واكتساب الأدوات اللازمة في التعامل مع التحديات المختلفة من اجل تحسين العلاقات بينهما أو تحسين أساليب الوالدية</Title>
             </AboutUsDesc>
             </AboutUsimages>
 

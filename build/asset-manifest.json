@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.151dd819.js",
+    "main.js": "/static/js/main.ab8269d1.js",
     "static/js/787.4695255d.chunk.js": "/static/js/787.4695255d.chunk.js",
     "static/media/Claro_Res.svg": "/static/media/Claro_Res.6093e0fa01a69ad69e54386ec22679d0.svg",
     "static/media/onza.svg": "/static/media/onza.d95a4589fb6513321a5e34b500959070.svg",
     "static/media/marriage_hero.jpeg": "/static/media/marriage_hero.059f1b8f94a3e838183c.jpeg",
     "static/media/epicure_logo.svg": "/static/media/epicure_logo.0521c905c66a7525a65dd26d8e7cfcc5.svg",
+    "static/media/counsel1.jpeg": "/static/media/counsel1.3f339cd66b6ee8acfc69.jpeg",
     "static/media/appleStore.svg": "/static/media/appleStore.2a3c2f37b8fe175a2451229e98cacb72.svg",
+    "static/media/counsel_family.jpeg": "/static/media/counsel_family.2151d19e627902d3499e.jpeg",
     "static/media/Logo.jpeg": "/static/media/Logo.f6b82745dd3c848c551a.jpeg",
     "static/media/playStore.svg": "/static/media/playStore.259fb9adb1a572700d51978c07704654.svg",
     "static/media/InstagramIcon.svg": "/static/media/InstagramIcon.c83e628eea4e83e0d2b6c8e54910510c.svg",
@@ -23,13 +25,12 @@
     "static/media/cart_img.svg": "/static/media/cart_img.0383ca9f7882be5cd547c84862be8eaf.svg",
     "static/media/FacebookIcon.svg": "/static/media/FacebookIcon.5e1cb4b86ac3f872dadcbde3ed31cd4b.svg",
     "static/media/shekel_sign.svg": "/static/media/shekel_sign.d17e5e3359af38c99b729144fc5a885e.svg",
-    "static/media/theX.svg": "/static/media/theX.7b34cc0225659ae047747e64827f9fca.svg",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.151dd819.js.map": "/static/js/main.151dd819.js.map",
+    "main.ab8269d1.js.map": "/static/js/main.ab8269d1.js.map",
     "787.4695255d.chunk.js.map": "/static/js/787.4695255d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.151dd819.js"
+    "static/js/main.ab8269d1.js"
   ]
 }
