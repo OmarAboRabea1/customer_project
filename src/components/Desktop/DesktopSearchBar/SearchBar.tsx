@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import { AllChefs, AllDishes, AllRestaurants, search_names } from "../../../assests/Data"
-import { Chef, Dish, Restaurant } from "../../../assests/Types";
-import { Link_to } from "../../NavBar/styles";
 import { Search_Container, Hero_box, SearchBar_box, Search_box, Search_input, Search_text_h1, On_search_img, Search_text_box, Search_result_table, Search_result_container, Search_text_p, HeroSection, Title, Subtitle, Button, ButtonContainer, IconContainer, FacebookIcon, WhatsappIcon, InstagramIcon } from "./styles"
 
 

@@ -1,7 +1,7 @@
 import React ,{ useEffect, useState } from "react";
 import SetWindowSize from "../../Helpers/SetWindowSize";
 import DesktopNavBar from "../Desktop/DesktopNavBar/DesktopNavBar";
-import NavBar from "../NavBar/NavBar";
+import NavBar from "../NavBar/MobileHamburger";
 import { Header_Container } from "./styles";
 
 

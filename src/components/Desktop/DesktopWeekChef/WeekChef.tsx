@@ -4,7 +4,6 @@ import { ChefResCard } from "./ChefResCard";
 import { useSelector } from "react-redux";
 import { Restaurant } from "../../../assests/Types";
 import { ResLink } from "../../../pages/DesktopRestaurantsPage/styles";
-import { Link_to } from "../../NavBar/styles";
 
 export const DesktopWeekChef=()=>{
 

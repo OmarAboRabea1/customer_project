@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { AllChefs, AllDishes, AllRestaurants, search_names } from "../../../assests/Data"
-import { Search_active, Search_box, Search_input, On_search_img, Search_result_newContainer } from "./styles";
+import { Search_active, Search_box, Search_input, On_search_img, Search_result_newContainer, Link_to } from "./styles";
 import { Search_result_table, Search_result_container, Search_text_p } from "../../SearchBar/styles"
-import { Link_to } from "../../NavBar/styles";
 import { useSelector } from "react-redux";
 import { Chef, Dish, Restaurant } from "../../../assests/Types";
 

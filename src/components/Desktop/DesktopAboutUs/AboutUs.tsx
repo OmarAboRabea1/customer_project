@@ -1,22 +1,20 @@
 import React, { forwardRef } from 'react';
-import {Title} from "../DesktopOurServices/styles";
-import { AboutUsContainer, AboutUsDesc, AboutUsimages, AppleStore_image, EpicureLogo_image, Logo_box, PlayStore_image, Stores_box } from "./styles";
+import { AboutUsContainer, AboutUsDesc, AboutUsimages, AppleStore_image, Description, EpicureLogo_image, Logo_box, PlayStore_image, Stores_box, Title } from "./styles";
 
 
 
 export const DesktopAboutUs = forwardRef<HTMLDivElement, {}>((props, ref) => {
-    return(
+    return (
         <AboutUsContainer ref={ref}>
-
-            <AboutUsimages>
-            <AboutUsDesc>
-                <Title>نبذة عنا</Title>
-                <Title>سمير ابوربيع: </Title>
-                <Title>حاصل على اللقب الاول في التربية اللا منهجية واللقب الثاني في الادارة التربوية وباحث دكتوراة في التنمية البشرية والارشاد الأسري، ومستشار في الارشاد الاسري والزوجي، اقدم تدريب للأفراد والعائلات والأزواج تشمل العديد من القضايا المختلفة مثل صعوبات العلاقات الزوجية والأسرية والذاتية ومشاكل التواصل واكتساب الأدوات اللازمة في التعامل مع التحديات المختلفة من اجل تحسين العلاقات بينهما أو تحسين أساليب الوالدية</Title>
-            </AboutUsDesc>
-            </AboutUsimages>
-
+          <AboutUsDesc>
+            <Title>نبذة عنا</Title>
+            <Title>سمير ابوربيع</Title>
+            <Description>حاصل على اللقب الأول في التربية اللا منهجية واللقب الثاني في الإدارة التربوية</Description>
+            <Description>باحث دكتوراة في التنمية البشرية والإرشاد الأسري، ومستشار في الإرشاد الأسري والزوجي</Description>
+            <Description>يقدم تدريبًا للأفراد والعائلات والأزواج تشمل العديد من القضايا المختلفة</Description>
+            <Description>مثل صعوبات العلاقات الزوجية والأسرية والذاتية ومشاكل التواصل</Description>
+            <Description>يهدف لتمكين الأفراد وتزويدهم بالأدوات اللازمة لتحسين العلاقات والأساليب الوالدية</Description>
+          </AboutUsDesc>
         </AboutUsContainer>
-            
-    )
-});
+      );
+    });

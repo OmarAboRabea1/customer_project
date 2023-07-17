@@ -4,17 +4,6 @@ import playStore from "../../../assests/playStore.svg"
 import appleStore from "../../../assests/appleStore.svg"
 
 
-export const AboutUsContainer = styled.div`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    background: #FAFAFA;
-    align-items: center;
-    margin-top: 40px;
-    padding-top: 20px;
-
-`
 export const Logo_box = styled.div`
     width: 50%;
     height: 100%;
@@ -71,11 +60,27 @@ export const AppleStore_image = styled.div`
 
 
 `
-
+export const AboutUsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  background-color: #222;
+`;
 
 export const AboutUsDesc = styled.div`
-    width: 100%;
-    height: fit-content;
-    display: flex;  
-    flex-direction: column;
-`
+  text-align: center;
+  padding: 40px;
+`;
+
+export const Title = styled.h2`
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+`;
+
+export const Description = styled.p`
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+`;
