@@ -1,66 +1,79 @@
 import styled from "styled-components"
-import epicure_logo from "../../assests/epicure_logo.svg"
-import playStore from "../../assests/playStore.svg"
-import appleStore from "../../assests/appleStore.svg"
 
 
-export const AboutUsContainer = styled.div`
+export const Logo_box = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: #FAFAFA;
-    align-items: flex-end;
-    margin-top: 40px;
-    padding-top: 20px;
-
+    align-items: center;
+    @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
 `
+
 export const AboutUsimages = styled.div`
-    width: 90%;
+    width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
-`
-
-export const EpicureLogo_image = styled.div`
-    width: 100%;
-    height: 150px;
-    background-image: url(${epicure_logo});
-    background-repeat: no-repeat;
-
+    margin: 40px;
+    gap: 30px;
+    @media (max-width: 768px) {
+        margin: 20px;
+    }
 `
 
 export const Stores_box = styled.div`
     width: 100%;
-    height: 320px;
+    height: fit-content;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
-    
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
-
-export const PlayStore_image = styled.div`
-    width: 100%;
-    height: 70px;
-    background-image: url(${playStore});
-    background-repeat: no-repeat;
-
-`
-
-export const AppleStore_image = styled.div`
-    width: 100%;
-    height: 70px;
-    background-image: url(${appleStore});
-    background-repeat: no-repeat;
-
-`
-
+export const AboutUsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  background-color: #222;
+  flex-direction: row;
+  @media (max-width: 768px) {
+      flex-direction: column;
+  }
+`;
 
 export const AboutUsDesc = styled.div`
-    width: 90%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-`
+  text-align: center;
+  padding: 40px;
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+`;
+
+export const Title = styled.h2`
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+`;
+
+export const Description = styled.p`
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+`;

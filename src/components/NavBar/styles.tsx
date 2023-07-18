@@ -178,7 +178,6 @@ export const Nav = styled.nav<HamburgerProps>`
     }
   }
 `;
-
 export const Nav_Container = styled.div`
     display: flex;
     width: 100%;
@@ -186,11 +185,14 @@ export const Nav_Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     box-shadow: 0 1px 3px rgba(15, 15, 15, 0.13);
     background-color: #ffff;
+    z-index: 100; // Ensure it appears over the rest of the content
+`;
 
-`
 
 export const Box_img = styled.div`
     display: flex;

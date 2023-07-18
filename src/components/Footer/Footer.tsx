@@ -1,21 +1,22 @@
-import { Instagram_logo, Link_to } from "./styles";
-import { Container, Footer1, Footer_box } from "./styles"
+import React, { forwardRef } from 'react';
+import { ContactButtons, FooterContainer, RightsText } from './styles';
+import { IconContainer } from '../heroSection/styles';
+import { FacebookIcon, InstagramIcon, WhatsappIcon } from '../Desktop/DesktopHeroSection/styles';
 
+const MobileFooter = forwardRef<HTMLDivElement, {}>((props, ref) => {
+    const currentYear = new Date().getFullYear();
 
-const Footer=()=>{
     return(
-        <Container>
-            <Footer1>
-                <Footer_box>
-                    <Link_to>
-                        <Instagram_logo/>
-                    </Link_to>
-                </Footer_box>
-
-            </Footer1>
-            
-        </Container>
-
+        <FooterContainer ref={ref}>
+          <RightsText>All rights reserved: Omar Abo Rabea {currentYear}</RightsText>
+          <ContactButtons>
+            <IconContainer>
+                <FacebookIcon href="https://www.facebook.com"/>
+                <WhatsappIcon href="wa.me/+972547100240"/>
+                <InstagramIcon href="https://www.instagram.com/faten_haj_issa/"/>
+            </IconContainer>
+          </ContactButtons>
+        </FooterContainer>
     )
-}
-export default Footer;
+});
+export default MobileFooter;

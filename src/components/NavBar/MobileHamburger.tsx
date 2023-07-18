@@ -36,6 +36,24 @@ const MobileHamburger: React.FC<MobileHamburgerProps> = ({
     };
   }, [open]);
 
+  const handleClickFooter = (e: any) => {
+    if (e.target.nodeName === 'BUTTON') {
+      setOpen(!open);
+    }
+    scrollToFooter()
+  };
+  const handleClickAboutUs = (e: any) => {
+    if (e.target.nodeName === 'BUTTON') {
+      setOpen(!open);
+    }
+    scrollToAboutUs()
+  };  const handleClickOurServices = (e: any) => {
+    if (e.target.nodeName === 'BUTTON') {
+      setOpen(!open);
+    }
+    scrollToOurServices()
+  };
+
   return (
     <MobileMenu ref={node}>
       <Hamburger open={open} onClick={() => setOpen(!open)}>
@@ -44,10 +62,9 @@ const MobileHamburger: React.FC<MobileHamburgerProps> = ({
         <div />
       </Hamburger>
       <Nav className='menu' open={open}>
-        <>{console.log(open)}</>
-        <button onClick={scrollToFooter}>تواصل معنا</button>
-        <button onClick={scrollToAboutUs}>من نحن</button>
-        <button onClick={scrollToOurServices}>خدماتنا</button>
+        <button onClick={handleClickFooter}>تواصل معنا</button>
+        <button onClick={handleClickAboutUs}>من نحن</button>
+        <button onClick={handleClickOurServices}>خدماتنا</button>
       </Nav>
     </MobileMenu>
   );

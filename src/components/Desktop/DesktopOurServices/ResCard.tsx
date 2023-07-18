@@ -1,4 +1,4 @@
-import { CardButton, CardContainer, CardDescription, CardImage, CardTitle, Card_container2, CardsContainer, ResChef, ResName, RestaurantCard, RestaurantCard_desc, RestaurantCard_img } from "./styles"
+import { CardButton, CardContainer, CardDescription, CardImage, CardTitle } from "./styles"
 import service1Image from "../../../assests/Claro_Res.svg"
 
 interface CardProps {

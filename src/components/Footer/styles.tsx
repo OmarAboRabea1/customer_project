@@ -1,39 +1,60 @@
 import styled from "styled-components"
-import instagram_logo from "../../assests/instagram_logo.jpeg";
 
-
-export const Container = styled.div`
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-
-
-
-`
-export const Link_to = styled.a`
-    
-    text-decoration: none;
+export const IconContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  @media (max-width: 768px) {
+    gap: 5px;
+  }
 `
 
+export const FooterContainer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+`;
 
-export const Footer1 = styled.div`
-    left: 0px;
-    background: #ffffff;
-    margin-left: 19px;
-    padding-top: 32px;
-    padding-bottom: 24px;
-`
+export const RightsText = styled.p`
+  margin: 5px 0;
+  font-size: 14px;
+  color: white;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+`;
 
-export const Footer_box = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    height: 100%;
-`
-export const Instagram_logo = styled.div`
-    background-image: url(${instagram_logo});
-    width: 32.93px;
-    height: 32px;
-`
+export const ContactButtons = styled.div`
+  display: flex;
+  gap: 10px;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+`;
+
+export const Button = styled.button`
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: white;
+    color: #ffffff;
+  }
+
+  @media (max-width: 768px) {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+`;

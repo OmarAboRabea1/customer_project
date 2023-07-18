@@ -4,13 +4,9 @@ import logo from "../../../assests/Logo.jpeg";
 import search_icon_img from "../../../assests/searchIcon.png";
 import user_icon_img from "../../../assests/userIcon.png";
 import cart_icon_img from "../../../assests/cartIcon.png";
-import theX from "../../../assests/theX.svg";
 import cart_img from "../../../assests/cart_img.svg";
 import search_img from "../../../assests/search_img.svg";
 import or_line from "../../../assests/or_line.svg";
-
-
-import { isPropertySignature } from "typescript";
 
 
 export const Nav_Container = styled.div`
@@ -21,8 +17,11 @@ export const Nav_Container = styled.div`
     justify-content: center;
     align-items: center;
     background: #ffffff;
-    position: relative;
+    position: fixed;
     box-shadow: 0 1px 3px rgba(15, 15, 15, 0.13);
+    top: 0;
+    left: 0;
+    z-index: 100; // Ensure it appears over the rest of the content
 
 `
 
