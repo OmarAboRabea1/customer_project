@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components";
 import heroImage from "../../../assests/marriage_hero.jpeg";
 import search_img from "../../../assests/search_img.svg";
 import facebookIcon from '../../../assests/FacebookIcon.svg';  
@@ -87,20 +87,6 @@ export const Search_text_box = styled.div`
 `
 
 
-export const Search_text_h1 = styled.h1`
-
-    font-style: normal;
-    font-weight: 200;
-    font-size: 26px;
-    font-color: white;
-    line-height: 32px;
-    letter-spacing: 1.97px;
-    margin: 0%;
-    color: #000000;
-
-`
-
-
 
 export const Search_result_container = styled.div`
     width: 90%;
@@ -176,29 +162,58 @@ export const HeroSection = styled.div`
 `
 
 export const Title = styled.h1`
-  font-size: 3em; 
+  font-size: 3.5em;
   text-align: center;
-  margin-bottom: 1em; // for some space between the title and subtitle
-`
+  font-family: 'Arial', sans-serif; // add a font of your choice here
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .5); // adds a shadow to the text
+
+  /* Adding a bright gradient color to the title text */
+  background: -webkit-linear-gradient(45deg, #FF8C00, #FFFF00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
+export const Acronym = styled.span`
+  color: #00FFFF;  // use a contrasting color to make it stand out
+  font-size: 0.6em; // slightly larger font size
+  margin-left: 5px; // little space from the main title
+`;
+
+const glowingShadow = keyframes`
+  0% {
+    text-shadow: 0 0 5px #FFFF00, 0 0 10px #FFFF00, 0 0 15px #FFD700, 0 0 20px #FFD700, 0 0 25px #FFD700, 0 0 30px #FFD700;
+  }
+  100% {
+    text-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00, 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700, 0 0 60px #FFD700;
+  }
+`;
 
 export const Subtitle = styled.h2`
-  font-size: 2em; // adjust this to fit your needs
+  font-size: 2em;
+  background: -webkit-linear-gradient(45deg, #FF8C00, #FFFF00);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); // Shadow to make it pop out
   text-align: center;
-  margin-bottom: 2em; // for some space between the subtitle and button
-`
+  font-weight: bold; // Make the font weight heavier
+
+  /* Adding a bright gradient color to the title text */
+  background: -webkit-linear-gradient(45deg, #f39625, #f4f437);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
 
 export const Button = styled.button`
-  padding: 1em 2em; // adjust this to fit your needs
-  font-size: 1em; // adjust this to fit your needs
-  color: white; // for the white text
-  background-color: transparent; // for the transparent background
-  border: 2px solid white; // for the white border
+  padding: 1em 2em;
+  font-size: 1em;
+  color: #0b0a0a;
+  background: -webkit-linear-gradient(45deg, #f4efe8, #f6f6de); // Apply the linear gradient as the background
+  border: 2px solid #f39625; // Apply the orange color from the gradient to the border
   cursor: pointer;
+  transition: all 0.5s ease; // Add a transition for smoother color change
 
   &:hover {
-    // styles for when the button is hovered over, adjust this to fit your needs
-    background-color: white;
-    color: black;
+    color: #f39625;
+    background: #ffffff; // Change to white background color
+    border: 2px solid #f39625; // Keep the border color as the orange from the gradient
   }
 `
 

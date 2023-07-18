@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { AllChefs, AllDishes, AllRestaurants, search_names } from "../../../assests/Data"
-import { Search_Container, Hero_box, SearchBar_box, Search_box, Search_input, Search_text_h1, On_search_img, Search_text_box, Search_result_table, Search_result_container, Search_text_p } from "./styles"
-import { Table } from '@table-library/react-table-library/table';
+import { Search_result_table, Search_result_container, Search_text_p } from "./styles"
 
 
 export const SearchSuggestions = (search:any)=>{

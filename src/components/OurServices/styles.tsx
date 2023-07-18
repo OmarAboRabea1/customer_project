@@ -126,7 +126,8 @@ export const AllRes_box = styled.div`
 export const ServicesSection = styled.section`
   display: flex;
   justify-content: center;
-  margin: 2em 0;
+  flex-wrap: wrap;
+
 `
 
 export const ServiceImage = styled.img`
@@ -149,17 +150,18 @@ export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 100%;
     height: fit-content;
     background-color: #f8f1f1;
     border-radius: 20px;
     margin: 20px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
 `;
 
 export const CardImage = styled.div<{imgUrl: string}>`
-    width: 100%;
+    width: 95%;
     height: 200px;
     border-radius: 15px;
     background-image: url(${props => props.imgUrl});
@@ -224,6 +226,6 @@ export const CardsContainer = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     background-color: #f0efeb;
-    width: 80%;
+    width: 90%;
     gap: 20px;
 `;

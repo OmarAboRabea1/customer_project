@@ -10,6 +10,8 @@ import {
   FacebookIcon,
   WhatsappIcon,
   InstagramIcon,
+  Acronym,
+  Title1,
 } from "./styles";
 
 export const MobileHeroSection = ({
@@ -24,8 +26,9 @@ export const MobileHeroSection = ({
   return (
     <Search_Container>
       <HeroSection>
-        <Title>عيادة الامان</Title>
-        <Subtitle>للاستشارات الزوجية, الاسرية, والجنسية</Subtitle>
+        <Title1>Aman Center<Acronym>- SFE</Acronym> </Title1>
+        <Title>مركز الامان</Title>
+        <Subtitle>للاستشارات الزوجية, الاسرية وتطوير الذات</Subtitle>
         <ButtonContainer>
           <Button>تعرف على المزيد</Button>
           <Button onClick={scrollToOurServices}>احجز استشارتك</Button>
