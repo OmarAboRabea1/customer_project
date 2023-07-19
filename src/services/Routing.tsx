@@ -10,6 +10,10 @@ import DesktopRestaurants from "../pages/DesktopRestaurantsPage/DesktopRestauran
 import HomePage from "../pages/HomePage/HomePage";
 import RestaurantPage from "../pages/RestaurantsPage/RestaurantPage/Restaurant";
 import Restaurants from "../pages/RestaurantsPage/Restaurants";
+import Faten from "../pages/FatenPage/Faten";
+import Sameir from "../pages/SameirPage/Sameir";
+import DesktopFatenPage from "../pages/DesktopFatenPage/DesktopFatenPage";
+import DesktopSameirPage from "../pages/DesktopSameirPage/DesktopSameirPage";
 
 
 
@@ -25,31 +29,27 @@ const Routing=()=>{
             <Routes>
                 <Route path="/" >
                 <Route index element={<HomePage />} />
-                {windowSize! < 1024 &&
+                {Number(windowSize!) < 1024 &&
                 <>
-                    <Route path="Restaurants" element={<Restaurants />} />
-                    <Route path="Restaurants/:restaurant_id" element={<RestaurantPage />} />
+                    <Route path="about/Sameir" element={<Sameir/>} />
                 </>
 
                 }
-                {windowSize! >= 1024 &&
+                {Number(windowSize!) >= 1024 &&
                 <>
-                    <Route path="Restaurants" element={<DesktopRestaurants />} />
-                    <Route path="Restaurants/:restaurant_id" element={<DesktopRestaurantPage />} />
+                    <Route path="about/Sameir" element={<DesktopSameirPage />} />
                 </>
                 }
-                {windowSize! < 1024 &&
+                {Number(windowSize!) < 1024 &&
                 <>
-                    <Route path="Chefs" element={<Chefs />} />
-                    <Route path="Chefs/:chef_id" element={<ChefPage />} />
+                    <Route path="about/Faten" element={<Faten />} />
 
                 </>
 
                 }
-                {windowSize! >= 1024 &&
+                {Number(windowSize!) >= 1024 &&
                 <>
-                    <Route path="Chefs" element={<DesktopChefs />} />
-                    <Route path="Chefs/:chef_id" element={<DesktopChefPage />} />
+                    <Route path="about/Faten" element={<DesktopFatenPage />} />
 
                 </>
                 

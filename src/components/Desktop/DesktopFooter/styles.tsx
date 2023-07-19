@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import instagram_logo from "../../../assests/instagram_logo.jpeg";
-
+import linkedInIcon from '../../../assests/LinkedInIcon.svg';  
+import whatsappIcon from '../../../assests/WhatsappIcon.svg'; 
 
 export const Container = styled.div`
     height: fit-content;
@@ -42,14 +42,6 @@ export const Logo_box = styled.div`
     height: fit-content;
     width: 100%;
 `
-
-export const Instagram_logo = styled.div`
-    background-image: url(${instagram_logo});
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
-`
-
 export const FooterContainer = styled.footer`
   display: flex;
   justify-content: center;
@@ -91,3 +83,19 @@ export const Button = styled.button`
     color: #ffffff;
   }
 `;
+
+export const SocialIcon = styled.a`
+  display: block;
+  width: 40px; // adjust size to fit your needs
+  height: 40px;
+  background-size: cover;
+`
+
+
+export const LinkedInIcon = styled(SocialIcon)`
+  background-image: url(${linkedInIcon});
+`
+
+export const WhatsappIcon = styled(SocialIcon)`
+  background-image: url(${whatsappIcon});
+`

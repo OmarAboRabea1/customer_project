@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import linkedInIcon from '../../assests/LinkedInIcon.svg';  
+import whatsappIcon from '../../assests/WhatsappIcon.svg'; 
 
 export const IconContainer = styled.div`
   display: flex;
@@ -58,3 +60,18 @@ export const Button = styled.button`
     font-size: 12px;
   }
 `;
+
+export const SocialIcon = styled.a`
+  display: block;
+  width: 40px; // adjust size to fit your needs
+  height: 40px;
+  background-size: cover;
+`
+
+export const LinkedInIcon = styled(SocialIcon)`
+  background-image: url(${linkedInIcon});
+`
+
+export const WhatsappIcon = styled(SocialIcon)`
+  background-image: url(${whatsappIcon});
+`

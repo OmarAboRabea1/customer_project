@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react';
-import { ContactButtons, FooterContainer, IconContainer, RightsText } from './styles';
-import { FacebookIcon, InstagramIcon, WhatsappIcon } from '../DesktopHeroSection/styles';
+import { ContactButtons, FooterContainer, IconContainer, LinkedInIcon, RightsText, WhatsappIcon } from './styles';
 
 const DesktopFooter = forwardRef<HTMLDivElement, {}>((props, ref) => {
     const currentYear = new Date().getFullYear();
@@ -10,9 +9,8 @@ const DesktopFooter = forwardRef<HTMLDivElement, {}>((props, ref) => {
           <RightsText>All rights reserved: Omar Abo Rabea {currentYear}</RightsText>
           <ContactButtons>
             <IconContainer>
-                <FacebookIcon href="https://www.facebook.com"/>
-                <WhatsappIcon href="wa.me/+972547100240"/>
-                <InstagramIcon href="https://www.instagram.com/faten_haj_issa/"/>
+                <LinkedInIcon href="https://www.linkedin.com/in/omar-abo-rabea-8695aa215/"/>
+                <WhatsappIcon href="https://wa.me/+972539613663"/>
             </IconContainer>
           </ContactButtons>
         </FooterContainer>

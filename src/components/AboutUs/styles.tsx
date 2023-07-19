@@ -77,3 +77,24 @@ export const Description = styled.p`
     font-size: 16px;
   }
 `;
+
+export const MoreButton = styled.button`
+  background-color: #4F46E5; // Replace with your desired button color
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #3730A3; // Replace with your desired hover color
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+`;
+
