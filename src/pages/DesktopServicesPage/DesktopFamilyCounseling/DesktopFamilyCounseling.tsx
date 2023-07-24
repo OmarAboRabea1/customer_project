@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { Container, HeroSection, CardsSection, Subtitle, CardButton, IconContainer} from "./styles";
 import { useNavigate } from "react-router-dom";
 import DesktopNavBar from '../../../components/Desktop/DesktopNavBar/DesktopNavBar';
-import { FamilyCounselingCard } from './DesktopFamilyCounselingCards';
+import { FamilyCounselingCards } from './DesktopFamilyCounselingCards';
 import DesktopFooter from '../../../components/Desktop/DesktopFooter/Footer';
 import { FacebookIcon, InstagramIcon, Search_Container, WhatsappIcon } from '../../../components/Desktop/DesktopHeroSection/styles';
 
@@ -36,7 +36,7 @@ const DesktopFamilyCounseling = () => {
                     </IconContainer>
                 </HeroSection>
             </Search_Container>
-            <FamilyCounselingCard />
+            <FamilyCounselingCards />
             <DesktopFooter />  
         </Container>
     )

@@ -6,7 +6,7 @@ const handleButtonClick = () => {
     window.location.href = "https://wa.me/+972539613663";
 };
 
-export const FamilyCounselingCards = () => (
+export const CouplesCounselingCards = () => (
     <CardsSection>
     <Title>كيفية الحصول على استشارة خاصة</Title>
     <CardContainer>
