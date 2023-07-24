@@ -1,19 +1,17 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import SetWindowSize from "../Helpers/SetWindowSize";
-import ChefPage from "../pages/ChefsPage/ChefPage/ChefPage";
-import Chefs from "../pages/ChefsPage/Chefs";
-import DesktopChefPage from "../pages/DesktopServicesPage/DesktopChefPage/DesktopChefPage";
-import DesktopChefs from "../pages/DesktopServicesPage/DesktopChefs";
-import DesktopRestaurantPage from "../pages/DesktopRestaurantsPage/DesktopRestaurantPage/Restaurant";
-import DesktopRestaurants from "../pages/DesktopRestaurantsPage/DesktopRestaurants";
-import HomePage from "../pages/HomePage/HomePage";
-import RestaurantPage from "../pages/RestaurantsPage/RestaurantPage/Restaurant";
-import Restaurants from "../pages/RestaurantsPage/Restaurants";
 import Faten from "../pages/FatenPage/Faten";
 import Sameir from "../pages/SameirPage/Sameir";
 import DesktopFatenPage from "../pages/DesktopFatenPage/DesktopFatenPage";
 import DesktopSameirPage from "../pages/DesktopSameirPage/DesktopSameirPage";
+import HomePage from "../pages/HomePage/HomePage";
+import DesktopFamilyCounseling from "../pages/DesktopServicesPage/DesktopFamilyCounseling/DesktopFamilyCounseling";
+import DesktopSelfImprove from "../pages/DesktopServicesPage/DesktopSelfImprove/DesktopSelfImprove";
+import DesktopCouplesCounseling from "../pages/DesktopServicesPage/DesktopCouplesCounseling/DesktopCouplesCounseling";
+import MobileFamilyCounseling from "../pages/MobileServicesPage/MobileFamilyCounseling/MobileFamilyCounseling";
+import MobileSelfImprove from "../pages/MobileServicesPage/MobileSelfImprove/MobileSelfImprove";
+import MobileCouplesCounseling from "../pages/MobileServicesPage/MobileCouplesCounseling/MobileCouplesCounseling";
 
 
 
@@ -32,27 +30,25 @@ const Routing=()=>{
                 {Number(windowSize!) < 1024 &&
                 <>
                     <Route path="about/Sameir" element={<Sameir/>} />
+                    <Route path="about/Faten" element={<Faten />} />
+                    <Route path="services" element={<Faten />} />
+                    <Route path="services/family_counseling" element={<MobileFamilyCounseling />} />
+                    <Route path="services/self_improve" element={<MobileSelfImprove />} />
+                    <Route path="services/couples_counseling" element={<MobileCouplesCounseling />} />
+
                 </>
 
                 }
                 {Number(windowSize!) >= 1024 &&
                 <>
                     <Route path="about/Sameir" element={<DesktopSameirPage />} />
-                </>
-                }
-                {Number(windowSize!) < 1024 &&
-                <>
-                    <Route path="about/Faten" element={<Faten />} />
-
-                </>
-
-                }
-                {Number(windowSize!) >= 1024 &&
-                <>
                     <Route path="about/Faten" element={<DesktopFatenPage />} />
+                    <Route path="services" element={<Faten />} />
+                    <Route path="services/family_counseling" element={<DesktopFamilyCounseling />} />
+                    <Route path="services/self_improve" element={<DesktopSelfImprove />} />
+                    <Route path="services/couples_counseling" element={<DesktopCouplesCounseling />} />
 
                 </>
-                
                 }
 
                 </Route>

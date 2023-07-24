@@ -20,7 +20,7 @@ const DesktopFatenPage = () => {   // Updated the component name
         aboutUsRef.current?.scrollIntoView({ behavior: "smooth" });
     }
     const scrollToOurServices = () => {
-        navigate('/Services');
+        navigate('/services');
     }
 
     return (
