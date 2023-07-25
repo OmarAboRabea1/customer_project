@@ -3,10 +3,9 @@ import { ServicesSection, Services_Container } from "./styles"
 import self_improve from "../../../assests/self_improve.jpeg"
 import family_counsel from "../../../assests/counsel_family.jpeg"
 import couple_counsel from "../../../assests/counsel1.jpeg"
-
-
-
 import { ServiceCard } from './ServiceCard';
+
+
 
 
 export const DesktopOurServices = forwardRef<HTMLDivElement, {}>((props, ref) => {

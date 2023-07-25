@@ -29,8 +29,8 @@ const Routing=()=>{
                 <Route index element={<HomePage />} />
                 {Number(windowSize!) < 1024 &&
                 <>
-                    <Route path="about/Sameir" element={<Sameir/>} />
-                    <Route path="about/Faten" element={<Faten />} />
+                    <Route path="about/Sameir" element={<MobileFamilyCounseling/>} />
+                    <Route path="about/Faten" element={<MobileFamilyCounseling />} />
                     <Route path="services" element={<Faten />} />
                     <Route path="services/family_counseling" element={<MobileFamilyCounseling />} />
                     <Route path="services/self_improve" element={<MobileSelfImprove />} />
