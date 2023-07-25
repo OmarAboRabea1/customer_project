@@ -1,10 +1,10 @@
 import { useRef, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
-import { AboutUsContainer, AboutUsDesc, Container, Description, Title } from "./styles";
+import { AboutUsContainer, AboutUsDesc, Container, Description } from "./styles";
 import { MobileNavBar } from '../../components/NavBar/MobileNavBar';
 import MobileFooter from '../../components/Footer/Footer';
-import { CardsContainer, ServicesSection, Services_Container } from '../../components/OurServices/styles';
+import { CardsContainer, ServicesSection, Services_Container, Title } from '../../components/OurServices/styles';
 import { ServiceCard } from '../../components/OurServices/ServiceCard';
 import self_improve from "../../assests/self_improve.jpeg"
 import family_counsel from "../../assests/counsel_family.jpeg"
@@ -33,6 +33,7 @@ const ServicesPage=()=>{
         <Container>
             <MobileNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices}/>
             <Services_Container>
+                <Title>خدماتنا</Title>
                 <ServicesSection>
                 <CardsContainer>
                     <ServiceCard

@@ -1,4 +1,3 @@
-import { useSelector } from "react-redux";
 import {
   Search_Container,
   HeroSection,
@@ -14,14 +13,19 @@ import {
   Title1,
 } from "./styles";
 
+import { useNavigate } from "react-router-dom";
+
 export const MobileHeroSection = ({
   scrollToOurServices,
 }: {
   scrollToOurServices: () => void;
 }) => {
-  const all_restaurants = useSelector((state: any) => state.restaurants.value);
-  const all_chefs = useSelector((state: any) => state.chefs.value);
-  const all_dishes = useSelector((state: any) => state.dishes.value);
+
+  let navigate = useNavigate();
+
+  const NavigateToAbout = () => {
+    navigate('/about');
+}
 
   return (
     <Search_Container>
@@ -30,7 +34,7 @@ export const MobileHeroSection = ({
         <Title>مركز الامان</Title>
         <Subtitle>للاستشارات الزوجية, الاسرية وتطوير الذات</Subtitle>
         <ButtonContainer>
-          <Button>تعرف على المزيد</Button>
+          <Button onClick={NavigateToAbout}>تعرف على المزيد</Button>
           <Button onClick={scrollToOurServices}>احجز استشارتك</Button>
         </ButtonContainer>
         <IconContainer>

@@ -1,10 +1,10 @@
 import { useRef, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
-import { AboutUsContainer, AboutUsDesc, Container, Description, Title } from "./styles";
+import { AboutUsContainer, AboutUsDesc, Container, Description } from "./styles";
 import DesktopNavBar from '../../components/Desktop/DesktopNavBar/DesktopNavBar';
 import DesktopFooter from '../../components/Desktop/DesktopFooter/Footer';
-import { ServicesSection, Services_Container } from '../../components/Desktop/DesktopOurServices/styles';
+import { ServicesSection, Services_Container, Title } from '../../components/Desktop/DesktopOurServices/styles';
 import { ServiceCard } from '../../components/Desktop/DesktopOurServices/ServiceCard';
 import self_improve from "../../assests/self_improve.jpeg"
 import family_counsel from "../../assests/counsel_family.jpeg"
@@ -34,6 +34,7 @@ const DesktopServicesPage=()=>{
         <Container>
             <DesktopNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices}/>
             <Services_Container>
+                <Title>خدماتنا</Title>
                 <ServicesSection>
                         <ServiceCard
                         imgUrl={self_improve}

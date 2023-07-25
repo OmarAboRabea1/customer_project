@@ -7,6 +7,7 @@ import couple_counsel from "../../../assests/counsel1.jpeg";
 export const Services_Container = styled.div`
     width: 100%;
     display: flex;
+    padding-top: 100px;
     flex-direction: column;
     align-items: center;
     text-align: center;

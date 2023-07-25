@@ -1,5 +1,4 @@
-import React, { useCallback, useEffect } from 'react';
-import logo from './logo.svg';
+import React, { useCallback, useEffect, useState } from 'react';
 import './App.css';
 import Routing from './services/Routing';
 import { useDispatch } from 'react-redux';
@@ -10,10 +9,15 @@ import { setDishes, setDishID } from './components/redux/dishes/DishesSlicer';
 import { setChef } from './components/redux/chef/ChefSlicer';
 import { setDishArray } from './components/redux/dish/DishSlicer';
 import { useSelector } from 'react-redux';
+import { ScrollContext, useScroll } from './Helpers/ScrollContext';
 
 
 
 function App() {
+
+  const scroll = useScroll();
+
+
   const dishesID = useSelector((state: any) => state.dishesID.value)
   const dispatch = useDispatch();
   const fetchRestaurants = useCallback(async () => {
@@ -66,7 +70,10 @@ function App() {
 
 
   return (
+    <ScrollContext.Provider value={scroll}>
     <Routing/>
+    </ScrollContext.Provider>
+
   )
 };
 

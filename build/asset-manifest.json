@@ -1,18 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.eb520e92.js",
+    "main.js": "/static/js/main.07ac644b.js",
     "static/js/787.4695255d.chunk.js": "/static/js/787.4695255d.chunk.js",
     "static/media/find_your_self.jpeg": "/static/media/find_your_self.bca4172606d99e97521d.jpeg",
     "static/media/dopamine.jpeg": "/static/media/dopamine.c150b982ce8a03a6cf82.jpeg",
     "static/media/Family_counseling.jpeg": "/static/media/Family_counseling.5abe35c3828b763a28a1.jpeg",
     "static/media/marriage_hero.jpeg": "/static/media/marriage_hero.059f1b8f94a3e838183c.jpeg",
-    "static/media/epicure_logo.svg": "/static/media/epicure_logo.0521c905c66a7525a65dd26d8e7cfcc5.svg",
     "static/media/counsel1.jpeg": "/static/media/counsel1.3f339cd66b6ee8acfc69.jpeg",
-    "static/media/appleStore.svg": "/static/media/appleStore.2a3c2f37b8fe175a2451229e98cacb72.svg",
     "static/media/counsel_family.jpeg": "/static/media/counsel_family.2151d19e627902d3499e.jpeg",
     "static/media/Logo.jpeg": "/static/media/Logo.f6b82745dd3c848c551a.jpeg",
-    "static/media/playStore.svg": "/static/media/playStore.259fb9adb1a572700d51978c07704654.svg",
     "static/media/InstagramIcon.svg": "/static/media/InstagramIcon.c83e628eea4e83e0d2b6c8e54910510c.svg",
     "static/media/WhatsappIcon.svg": "/static/media/WhatsappIcon.7dc3f3267bee9b39fd8d08466208e48a.svg",
     "static/media/or_line.svg": "/static/media/or_line.80a7d34505a736e73a74cf0ae405de30.svg",
@@ -22,11 +19,11 @@
     "static/media/cart_img.svg": "/static/media/cart_img.0383ca9f7882be5cd547c84862be8eaf.svg",
     "static/media/FacebookIcon.svg": "/static/media/FacebookIcon.5e1cb4b86ac3f872dadcbde3ed31cd4b.svg",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.eb520e92.js.map": "/static/js/main.eb520e92.js.map",
+    "main.07ac644b.js.map": "/static/js/main.07ac644b.js.map",
     "787.4695255d.chunk.js.map": "/static/js/787.4695255d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.eb520e92.js"
+    "static/js/main.07ac644b.js"
   ]
 }
