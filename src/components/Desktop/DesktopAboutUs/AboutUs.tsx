@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { AboutUsContainer, AboutUsDesc, Description, Title, MoreButton } from "./styles";
+import { AboutUsContainer, AboutUsDesc, Description, Title, MoreButton, MoreAboutButton, TitleSmaller } from './styles';
 import { useNavigate } from "react-router-dom";
 
 export const DesktopAboutUs = forwardRef<HTMLDivElement, {}>((props, ref) => {
@@ -13,19 +13,23 @@ export const DesktopAboutUs = forwardRef<HTMLDivElement, {}>((props, ref) => {
         navigate('/about/sameir');
     }
 
+    const navigateToAbout = () => {
+        navigate('/about');
+    }
+
     return (
         <AboutUsContainer ref={ref}>
           <AboutUsDesc>
-            <Title>فاتن ابوربيع</Title>
-            <Description>حاصلة على اللقب الأول في التربية اللا منهجية واللقب الثاني في الإدارة التربوية</Description>
-            <Description>باحثة دكتوراة في التنمية البشرية والإرشاد الأسري، ومستشارة في الإرشاد الأسري والزوجي</Description>
-            <MoreButton onClick={navigateToFaten}>أعرف أكثر عن فاتن</MoreButton>
+            <Title>من نحن</Title>
+            <Description>يقدم المركز خدمات استشارية وتوجيهية للأفراد والازواج والعائلات الذين يبحثون عن التغيير الإيجابي في حياتهم.</Description>
+            <MoreAboutButton onClick={navigateToAbout}> للمزيد من التفاصيل</MoreAboutButton>
           </AboutUsDesc>
           <AboutUsDesc>
-            <Title>سمير ابوربيع</Title>
-            <Description>حاصل على اللقب الأول في التربية اللا منهجية واللقب الثاني في الإدارة التربوية</Description>
-            <Description>باحث دكتوراة في التنمية البشرية والإرشاد الأسري، ومستشار في الإرشاد الأسري والزوجي</Description>
-            <MoreButton onClick={navigateToSameir}>أعرف أكثر عن سمير</MoreButton>
+            <TitleSmaller> تقدم الاستشارة والدورات على ايدي مختصي المركز:</TitleSmaller>
+            <Description>سمير ابو ربيع: مستشار في التربية اللا منهجية </Description>
+            <MoreButton onClick={navigateToSameir}>للمزيد عن سمير</MoreButton>
+            <Description>فاتن حاج عيسى ابو ربيع: مستشارة في التربية اللا منهجية </Description>
+            <MoreButton onClick={navigateToSameir}>للمزيد عن فاتن</MoreButton>
           </AboutUsDesc>
         </AboutUsContainer>
     );

@@ -2,10 +2,10 @@ import { useRef, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
 import { AboutUsContainer, AboutUsDesc, Container, Description, Title } from "./styles";
-import DesktopNavBar from '../../components/Desktop/DesktopNavBar/DesktopNavBar';
-import DesktopFooter from '../../components/Desktop/DesktopFooter/Footer';
+import { MobileNavBar } from '../../components/NavBar/MobileNavBar';
+import MobileFooter from '../../components/Footer/Footer';
 
-const DesktopFatenPage = () => {   // Updated the component name
+const AboutUsPage=()=>{
 
     const footerRef = useRef<HTMLDivElement>(null);
     const aboutUsRef = useRef<HTMLDivElement>(null);
@@ -13,6 +13,7 @@ const DesktopFatenPage = () => {   // Updated the component name
 
     let navigate = useNavigate();
 
+    
     const scrollToFooter = () => {
         footerRef.current?.scrollIntoView({ behavior: "smooth" });
     }
@@ -20,12 +21,12 @@ const DesktopFatenPage = () => {   // Updated the component name
         aboutUsRef.current?.scrollIntoView({ behavior: "smooth" });
     }
     const scrollToOurServices = () => {
-        navigate('/services');
+        navigate('/Services');
     }
 
-    return (
+    return(
         <Container>
-            <DesktopNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices} />
+            <MobileNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices}/>
             <AboutUsContainer>
                 <AboutUsDesc>
                     <Title>نبذة عنا</Title>
@@ -37,9 +38,9 @@ const DesktopFatenPage = () => {   // Updated the component name
                     <Description>يهدف لتمكين الأفراد وتزويدهم بالأدوات اللازمة لتحسين العلاقات والأساليب الوالدية</Description>
                 </AboutUsDesc>
             </AboutUsContainer>
-
-            <DesktopFooter ref={footerRef}/> 
+            
+            <MobileFooter ref={footerRef}/>
         </Container>
     )
 }
-export default DesktopFatenPage;
+export default AboutUsPage;

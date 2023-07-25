@@ -9,9 +9,12 @@ interface CardProps {
 }
 
 export const ServiceCard: React.FC<CardProps> = ({imgUrl, title, description, buttonUrl}) => {
+    
     const handleButtonClick = () => {
         window.location.href = buttonUrl;
-    };    return (
+    };
+
+    return (
         <CardContainer>
             <CardImage imgUrl={imgUrl} />
             <CardTitle>{title}</CardTitle>

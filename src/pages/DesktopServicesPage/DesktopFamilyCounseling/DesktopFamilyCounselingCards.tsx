@@ -3,7 +3,7 @@ import { CardsSection, Title, ButtonContainer, Button_text, CardButton, CardCont
 import { WhatsappIcon } from '../../../components/Footer/styles';
 
 const handleButtonClick = () => {
-    window.location.href = "https://wa.me/+972539613663";
+    window.location.href = "https://wa.me/+972547100240";
 };
 
 export const FamilyCounselingCards = () => (

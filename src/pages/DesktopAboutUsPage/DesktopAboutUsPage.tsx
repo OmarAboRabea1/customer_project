@@ -5,7 +5,7 @@ import { AboutUsContainer, AboutUsDesc, Container, Description, Title } from "./
 import DesktopNavBar from '../../components/Desktop/DesktopNavBar/DesktopNavBar';
 import DesktopFooter from '../../components/Desktop/DesktopFooter/Footer';
 
-const DesktopFatenPage = () => {   // Updated the component name
+const DesktopAboutUsPage = () => {   // Updated the component name
 
     const footerRef = useRef<HTMLDivElement>(null);
     const aboutUsRef = useRef<HTMLDivElement>(null);
@@ -38,8 +38,8 @@ const DesktopFatenPage = () => {   // Updated the component name
                 </AboutUsDesc>
             </AboutUsContainer>
 
-            <DesktopFooter ref={footerRef}/> 
+            <DesktopFooter ref={footerRef}/>
         </Container>
     )
 }
-export default DesktopFatenPage;
+export default DesktopAboutUsPage;

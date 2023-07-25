@@ -1,8 +1,9 @@
 import React, { forwardRef } from 'react';
-import { CardsContainer, ServiceTitle, ServicesSection, Services_Container, Title, Title_box } from "./styles"
+import { ButtonContainer, CardsContainer, MoreForCards, ServiceTitle, ServicesSection, Services_Container, Title, Title_box } from "./styles"
 import self_improve from "../../assests/self_improve.jpeg"
 import family_counsel from "../../assests/counsel_family.jpeg"
 import couple_counsel from "../../assests/counsel1.jpeg"
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -11,15 +12,22 @@ import { ServiceCard } from './ServiceCard';
 
 export const MobileOurServices = forwardRef<HTMLDivElement, {}>((props, ref) => {
 
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/services');
+  };
+
     return(
       <Services_Container>
+        <Title>خدماتنا</Title>
         <ServicesSection ref={ref}>
           <CardsContainer>
               <ServiceCard
                   imgUrl={self_improve}
                   title="تطوير الذات"
                   description="تطوير الذات والتنمية البشرية هي عمليات تهدف إلى تحسين الأداء الشخصي والمهني والاجتماعي للفرد. وتشمل هذه العمليات تعلم مهارات جديدة وتطوير القدرات والمواهب الخاصة بالفرد، وتحسين الوعي الذاتي وتعزيز الثقة بالنفس  والقدرة على تحديد الاهداف والعمل على انجازها ضمن خطة عملية مدروسة وممنهجة . المختصون يوفرون هذه الخدمة من خلال التعلم والتدريب العملي الذي يهدف الى تحسين التواصل بين الفرد والمجتمع والتركيز على نقاط القوة وتطوير الذات واكتشاف القدرات الكامنة بكل شخص وتحقيق الاهداف على ارض الواقع ."
-                  buttonUrl="/about/faten"
+                  buttonUrl="/services/self_improve"
               />
               <ServiceCard
                   imgUrl={couple_counsel}
@@ -39,6 +47,9 @@ export const MobileOurServices = forwardRef<HTMLDivElement, {}>((props, ref) => 
               />
           </CardsContainer>
         </ServicesSection>
+        <ButtonContainer>
+          <MoreForCards onClick={handleButtonClick}> لجميع خدماتنا</MoreForCards>
+        </ButtonContainer>
       </Services_Container>
         
             

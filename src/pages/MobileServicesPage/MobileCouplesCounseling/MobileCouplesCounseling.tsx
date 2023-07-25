@@ -1,12 +1,13 @@
-import Header from "../../../components/Header/Header";
 import { useRef, useState } from 'react';
 
-import { Container, Title, Title_box } from "./styles";
-import DesktopFooter from "../../../components/Desktop/DesktopFooter/Footer";
-import DesktopNavBar from "../../../components/Desktop/DesktopNavBar/DesktopNavBar";
+import { CardButton, CardsSection, Container, Description, HeroSection, Image, Subtitle, Title, Title_box } from "./styles";
 import { useNavigate } from "react-router-dom";
+import { MobileNavBar } from "../../../components/NavBar/MobileNavBar";
+import MobileFooter from "../../../components/Footer/Footer";
+import { Acronym, Button, ButtonContainer, FacebookIcon, IconContainer, InstagramIcon, Search_Container, WhatsappIcon } from "../../../components/heroSection/styles";
+import { CouplesCounselingCards } from './CouplesCounselingCards';
 
-const MobileCouplesCounseling=()=>{
+const MobileFamilyCounseling=()=>{
 
     const footerRef = useRef<HTMLDivElement>(null);
     const aboutUsRef = useRef<HTMLDivElement>(null);
@@ -26,10 +27,23 @@ const MobileCouplesCounseling=()=>{
 
     return(
         <Container>
-            <DesktopNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices} />
-            <DesktopFooter/>      
+            <MobileNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices} />
+            <Search_Container>
+                <HeroSection>
+                    <Subtitle>استشارة زوجية</Subtitle>
+                    <IconContainer>
+                        <FacebookIcon href="https://www.facebook.com/afaq.edu"/>
+                        <WhatsappIcon href="https://wa.me/+972547100240"/>
+                        <InstagramIcon href="https://www.instagram.com/aman_academy_sfe/"/>
+                    </IconContainer>
+                </HeroSection>
+
+            </Search_Container>
+            <CouplesCounselingCards/>
+            <MobileFooter/>      
         </Container>
         
     )
 }
-export default MobileCouplesCounseling;
+
+export default MobileFamilyCounseling;

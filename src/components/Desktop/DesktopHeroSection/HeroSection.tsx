@@ -1,20 +1,15 @@
-import { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
 import { Search_Container, HeroSection, Title, Subtitle, Button, ButtonContainer, IconContainer, FacebookIcon, WhatsappIcon, InstagramIcon, Acronym } from "./styles"
+import { useNavigate } from "react-router-dom";
 
 
 
 export const DesktopHeroSection = ({scrollToOurServices}: {scrollToOurServices: () => void}) => {
 
-  const all_retaurants = useSelector((state: any) => state.restaurants.value)
-  const all_chefs = useSelector((state: any) => state.chefs.value)
-  const all_dishes = useSelector((state: any) => state.dishes.value)
+  let navigate = useNavigate();
 
-  const [windowSize, setWindowSize] = useState<Number>()
-
-  useEffect(()=>{
-      setWindowSize(window.innerWidth)
-  })
+  const NavigateToAbout = () => {
+    navigate('/about');
+}
 
     return(
             <Search_Container>
@@ -23,7 +18,7 @@ export const DesktopHeroSection = ({scrollToOurServices}: {scrollToOurServices: 
                     <Title>مركز الامان</Title>
                     <Subtitle>للاستشارات الزوجية, الاسرية وتطوير الذات</Subtitle>
                     <ButtonContainer>
-                        <Button>تعرف على المزيد</Button>
+                        <Button onClick={NavigateToAbout}>تعرف على المزيد</Button>
                         <Button onClick={scrollToOurServices}>احجز استشارتك</Button>
                     </ButtonContainer>
                     <IconContainer>

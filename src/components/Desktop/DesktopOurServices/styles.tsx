@@ -17,8 +17,9 @@ export const ServicesSection = styled.section`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 2em 0;
   padding: 5em;
+  padding-bottom: 10px;
+  padding-top: 10px;
 `
 
 export const CardContainer = styled.div`
@@ -56,6 +57,7 @@ export const CardTitle = styled.h2`
 export const CardDescription = styled.p`
     color: #666;
     text-align: center;
+    direction: rtl;
 `;
 
 export const CardButton = styled.button`
@@ -99,3 +101,58 @@ export const CardButton = styled.button`
     }
 `;
 
+
+export const Title = styled.h2`
+  font-size: 24px;
+  color: #180466;
+  direction: rtl;
+  font-size: 35px;
+  @media (max-width: 768px) {
+    font-size: 45px;
+  }
+`;
+
+export const MoreForCards = styled.button`
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: 2px solid #d26868;
+    background: white;
+    color: #c06565;
+    text-decoration: none;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        position: absolute;
+        background: #f68787;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        z-index: -1;
+        direction: rtl;
+        transition: width 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition-delay: 0.2s;
+    }
+
+    &:hover {
+        color: white;
+        transition: color 0.1s ease-in-out;
+        &:before {
+            width: 100%;
+            transition: width 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+    }
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  padding-bottom: 100px;
+`;

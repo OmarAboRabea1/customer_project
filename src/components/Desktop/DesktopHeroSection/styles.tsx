@@ -150,7 +150,7 @@ export const Search_containerSec = styled.div`
 `
 
 export const HeroSection = styled.div`
-  height: 80vh; 
+  height: 600px; 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage});
   background-size: cover;
   background-position: center;

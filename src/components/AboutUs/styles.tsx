@@ -64,8 +64,19 @@ export const Title = styled.h2`
   font-size: 24px;
   color: #fff;
   margin-bottom: 20px;
+  direction: rtl;
   @media (max-width: 768px) {
     font-size: 20px;
+  }
+`;
+
+export const TitleSmaller = styled.h2`
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+  direction: rtl;
+  @media (max-width: 768px) {
+    font-size: 16px;
   }
 `;
 
@@ -76,6 +87,7 @@ export const Description = styled.p`
   @media (max-width: 768px) {
     font-size: 16px;
   }
+  direction: rtl;
 `;
 
 export const MoreButton = styled.button`
@@ -93,7 +105,27 @@ export const MoreButton = styled.button`
   }
 
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+`;
+
+export const MoreAboutButton = styled.button`
+  background-color: #4F46E5; // Replace with your desired button color
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #3730A3; // Replace with your desired hover color
+  }
+
+  @media (max-width: 768px) {
+    font-size: 15px;
     padding: 8px 16px;
   }
 `;
