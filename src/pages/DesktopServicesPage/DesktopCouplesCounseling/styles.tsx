@@ -28,7 +28,7 @@ export const CardsSection = styled.div`
 `;
 
 export const CardContainer = styled.div`
-    width: 100%;
+    width: 40%;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -38,10 +38,7 @@ export const CardContainer = styled.div`
     border: 1px solid black; 
     margin-bottom: 1rem;
 
-    @media (min-width: 992px) {
-        width: calc(50% - 2rem);
-        margin-bottom: 2rem;
-    }
+ 
 `;
 
 export const DesktopContainer = styled.div`
@@ -55,12 +52,12 @@ export const Cards_container = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 30px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 55px;
 `
 export const Cards_container2 = styled.div`
     width: 80%;

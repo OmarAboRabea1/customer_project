@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
-import { AboutUsContainer, AboutUsDesc, Container, Description, Title } from "./styles";
+import { AboutUsContainer, AboutUsDesc, Container, ContainerProfileImage, Description, ProfileImage, Title } from "./styles";
 import { MobileNavBar } from '../../components/NavBar/MobileNavBar';
 import MobileFooter from '../../components/Footer/Footer';
 
@@ -29,13 +29,18 @@ const Sameir=()=>{
             <MobileNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices}/>
             <AboutUsContainer>
                 <AboutUsDesc>
-                    <Title>نبذة عنا</Title>
+                    <ContainerProfileImage>
+                    <Title>نبذة عن</Title>
                     <Title>سمير ابوربيع</Title>
-                    <Description>حاصل على اللقب الأول في التربية اللا منهجية واللقب الثاني في الإدارة التربوية</Description>
-                    <Description>باحث دكتوراة في التنمية البشرية والإرشاد الأسري، ومستشار في الإرشاد الأسري والزوجي</Description>
-                    <Description>يقدم تدريبًا للأفراد والعائلات والأزواج تشمل العديد من القضايا المختلفة</Description>
-                    <Description>مثل صعوبات العلاقات الزوجية والأسرية والذاتية ومشاكل التواصل</Description>
-                    <Description>يهدف لتمكين الأفراد وتزويدهم بالأدوات اللازمة لتحسين العلاقات والأساليب الوالدية</Description>
+                    <ProfileImage/>
+                    </ContainerProfileImage>
+                    <Description>خبرة طويلة في مجال التربية والارشاد والتدريب</Description>
+                    <Description>مستشار في العلاقات الزوجية والاسرية والجنسية،</Description>
+                    <Description>حاصل على اللقب الاول في التربية اللا منهجية واللقب الثاني في الادارة التربوية</Description>
+                    <Description>باحث دكتوراة في التنمية البشرية والارشاد الاسري </Description>
+                    <Description>PHD In Human Development And Family Counseling.</Description>
+                    <Description>Simulation موجه مجموعات ومرشد محاكاة </Description>
+
                 </AboutUsDesc>
             </AboutUsContainer>
             

@@ -1,4 +1,8 @@
 import styled from "styled-components"
+import profileImage from "../../assests/self_improve3.jpeg";
+
+
+
 // Add this at the top of your styles.tsx file
 const Colors = {
     primary: '#4F46E5', // A shade of purple
@@ -16,6 +20,16 @@ export const Container = styled.div`
     flex-direction: column;
     margin-top: 50px;
 `
+export const ProfileImage = styled.div`
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px;
+    background:     url(${profileImage}) no-repeat center; 
+    background-size: cover;
+`;
+
 export const AboutUsContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -31,12 +45,32 @@ export const AboutUsContainer = styled.div`
 `;
 
 export const AboutUsDesc = styled.div`
+  display: flex;
+  align-items: center;  
+  justify-content: center;  
+  flex-direction: row;
   text-align: center;
   padding: 40px;
   @media (max-width: 768px) {
+    flex-direction: column;
     padding: 20px;
   }
 `;
+
+export const ContainerProfileImage = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;  
+  justify-content: space-between;  
+  flex-direction: row-reverse;
+  text-align: center;
+  padding: 40px;
+  @media (max-width: 768px) {
+    flex-direction: row-reverse ;
+    padding: 20px;
+  }
+`;
+
 
 export const Title = styled.h2`
   font-family: ${FontFamily};
@@ -53,7 +87,7 @@ export const Description = styled.p`
   font-family: ${FontFamily};
   font-size: 20px;
   color: ${Colors.dark};
-  line-height: 1.8;
+  line-height: 1.5;
   margin-bottom: 20px;
   @media (max-width: 768px) {
     font-size: 18px;

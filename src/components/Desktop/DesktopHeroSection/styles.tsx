@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import heroImage from "../../../assests/marriage_hero.jpeg";
+import heroImage from "../../../assests/marriageHero5.jpeg";
 import search_img from "../../../assests/search_img.svg";
 import facebookIcon from '../../../assests/FacebookIcon.svg';  
 import whatsappIcon from '../../../assests/WhatsappIcon.svg';   

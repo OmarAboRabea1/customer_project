@@ -28,7 +28,7 @@ const DesktopSelfImprove = () => {
             <DesktopNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices} />
             <Search_Container>
                 <HeroSection>
-                    <Subtitle>استشارة نفسية</Subtitle>
+                    <Subtitle>تطوير الذات</Subtitle>
                     <IconContainer>
                         <FacebookIcon href="https://www.facebook.com/afaq.edu" />
                         <WhatsappIcon href="https://wa.me/+972547100240" />

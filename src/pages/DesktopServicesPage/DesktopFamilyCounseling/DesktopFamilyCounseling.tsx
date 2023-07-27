@@ -28,7 +28,7 @@ const DesktopFamilyCounseling = () => {
             <DesktopNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices} />
             <Search_Container>
                 <HeroSection>
-                    <Subtitle>استشارة نفسية</Subtitle>
+                    <Subtitle>استشارة اسرية</Subtitle>
                     <IconContainer>
                         <FacebookIcon href="https://www.facebook.com/afaq.edu" />
                         <WhatsappIcon href="https://wa.me/+972547100240" />

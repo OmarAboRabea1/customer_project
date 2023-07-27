@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { AboutUsContainer, AboutUsDesc, Description, Title, MoreButton, MoreAboutButton, TitleSmaller } from './styles';
+import { AboutUsContainer, AboutUsDesc, Description, Title, MoreButton, MoreAboutButton, TitleSmaller, Description2 } from './styles';
 import { useNavigate } from "react-router-dom";
 
 export const MobileAboutUs = forwardRef<HTMLDivElement, {}>((props, ref) => {
@@ -27,9 +27,9 @@ export const MobileAboutUs = forwardRef<HTMLDivElement, {}>((props, ref) => {
           </AboutUsDesc>
           <AboutUsDesc>
             <TitleSmaller> تقدم الاستشارة والدورات على ايدي مختصي المركز:</TitleSmaller>
-            <Description>سمير ابو ربيع: مستشار في التربية اللا منهجية </Description>
+            <Description>سمير ابو ربيع :  استشاري  في  العلاقات  الزوجية,  الاسرية والجنسية </Description>
             <MoreButton onClick={navigateToSameir}>للمزيد عن سمير</MoreButton>
-            <Description>فاتن حاج عيسى ابو ربيع: مستشارة في التربية اللا منهجية </Description>
+            <Description2>فاتن حاج عيسى ابو ربيع: مستشارة في العلاقات الزوجية والاسرية  </Description2>
             <MoreButton onClick={navigateToSameir}>للمزيد عن فاتن</MoreButton>
           </AboutUsDesc>
         </AboutUsContainer>

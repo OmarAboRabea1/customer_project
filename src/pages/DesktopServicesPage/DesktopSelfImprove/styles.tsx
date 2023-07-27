@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import heroImage from "../../../assests/marriage_hero.jpeg";
+import heroImage from "../../../assests/self_improve2.jpeg";
 
 export const Container = styled.div`
     width: 100%;
@@ -27,22 +27,6 @@ export const CardsSection = styled.div`
     }
 `;
 
-export const CardContainer = styled.div`
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background: #e5eef2;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 1px solid black; 
-    margin-bottom: 1rem;
-
-    @media (min-width: 992px) {
-        width: calc(50% - 2rem);
-        margin-bottom: 2rem;
-    }
-`;
 
 export const DesktopContainer = styled.div`
     width: 100%;
@@ -51,17 +35,7 @@ export const DesktopContainer = styled.div`
     flex-direction: row;
     justify-content: center;
 `
-export const Cards_container = styled.div`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-`
+
 export const Cards_container2 = styled.div`
     width: 80%;
     height: 100%;
@@ -81,6 +55,31 @@ export const Title_box = styled.div`
     padding-bottom: 5px;
     padding-left: 20px;
 `
+export const Cards_container = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+`
+
+export const CardContainer = styled.div`
+    width: 40%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #e5eef2;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid black; 
+    margin-bottom: 1rem;
+
+ 
+`;
 
 export const Title = styled.h1`
     font-family: 'Helvetica Neue';

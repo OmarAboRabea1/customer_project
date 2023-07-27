@@ -1,15 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.07ac644b.js",
+    "main.js": "/static/js/main.a68911b0.js",
     "static/js/787.4695255d.chunk.js": "/static/js/787.4695255d.chunk.js",
     "static/media/find_your_self.jpeg": "/static/media/find_your_self.bca4172606d99e97521d.jpeg",
     "static/media/dopamine.jpeg": "/static/media/dopamine.c150b982ce8a03a6cf82.jpeg",
-    "static/media/Family_counseling.jpeg": "/static/media/Family_counseling.5abe35c3828b763a28a1.jpeg",
+    "static/media/family_counseling3.jpeg": "/static/media/family_counseling3.8b5f19b18e8cefcc8a6f.jpeg",
+    "static/media/family_counseling8.jpeg": "/static/media/family_counseling8.419c4bb1a840c7f96718.jpeg",
+    "static/media/family_counseling9.jpeg": "/static/media/family_counseling9.46555c629d4cd533f4be.jpeg",
     "static/media/marriage_hero.jpeg": "/static/media/marriage_hero.059f1b8f94a3e838183c.jpeg",
+    "static/media/marriageHero5.jpeg": "/static/media/marriageHero5.fb636b6658135dde47b6.jpeg",
+    "static/media/self_improve2.jpeg": "/static/media/self_improve2.23bb6b0f6fab9680cef9.jpeg",
     "static/media/counsel1.jpeg": "/static/media/counsel1.3f339cd66b6ee8acfc69.jpeg",
     "static/media/counsel_family.jpeg": "/static/media/counsel_family.2151d19e627902d3499e.jpeg",
     "static/media/Logo.jpeg": "/static/media/Logo.f6b82745dd3c848c551a.jpeg",
+    "static/media/self_improve3.jpeg": "/static/media/self_improve3.eff0d592175cec2d443c.jpeg",
     "static/media/InstagramIcon.svg": "/static/media/InstagramIcon.c83e628eea4e83e0d2b6c8e54910510c.svg",
     "static/media/WhatsappIcon.svg": "/static/media/WhatsappIcon.7dc3f3267bee9b39fd8d08466208e48a.svg",
     "static/media/or_line.svg": "/static/media/or_line.80a7d34505a736e73a74cf0ae405de30.svg",
@@ -19,11 +24,11 @@
     "static/media/cart_img.svg": "/static/media/cart_img.0383ca9f7882be5cd547c84862be8eaf.svg",
     "static/media/FacebookIcon.svg": "/static/media/FacebookIcon.5e1cb4b86ac3f872dadcbde3ed31cd4b.svg",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.07ac644b.js.map": "/static/js/main.07ac644b.js.map",
+    "main.a68911b0.js.map": "/static/js/main.a68911b0.js.map",
     "787.4695255d.chunk.js.map": "/static/js/787.4695255d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.07ac644b.js"
+    "static/js/main.a68911b0.js"
   ]
 }

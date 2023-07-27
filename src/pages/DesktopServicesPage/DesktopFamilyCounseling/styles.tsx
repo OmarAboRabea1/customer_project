@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import heroImage from "../../../assests/marriage_hero.jpeg";
+import heroImage from "../../../assests/family_counseling8.jpeg";
 
 export const Container = styled.div`
     width: 100%;
@@ -27,8 +27,20 @@ export const CardsSection = styled.div`
     }
 `;
 
-export const CardContainer = styled.div`
+export const Cards_container = styled.div`
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+`
+
+export const CardContainer = styled.div`
+    width: 40%;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -38,10 +50,7 @@ export const CardContainer = styled.div`
     border: 1px solid black; 
     margin-bottom: 1rem;
 
-    @media (min-width: 992px) {
-        width: calc(50% - 2rem);
-        margin-bottom: 2rem;
-    }
+ 
 `;
 
 export const DesktopContainer = styled.div`
@@ -51,17 +60,7 @@ export const DesktopContainer = styled.div`
     flex-direction: row;
     justify-content: center;
 `
-export const Cards_container = styled.div`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-`
+
 export const Cards_container2 = styled.div`
     width: 80%;
     height: 100%;
@@ -255,17 +254,17 @@ export const ButtonContainer = styled.div`
 `;
 
 export const HeroSection = styled.div`
-  height: 60vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(${heroImage});
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
 `;
 
 export const Subtitle = styled.h2`

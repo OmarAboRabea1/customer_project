@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import heroImage from "../../../assests/marriage_hero.jpeg";
+import heroImage from "../../../assests/self_improve3.jpeg";
 
 
 export const Container = styled.div`

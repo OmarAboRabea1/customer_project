@@ -1,11 +1,11 @@
 import { useRef, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
-import { AboutUsContainer, AboutUsDesc, Container, Description, Title } from "./styles";
+import { AboutUsContainer, AboutUsDesc, Container, ContainerProfileImage, Description, ProfileImage, Title } from "./styles";
 import { MobileNavBar } from '../../components/NavBar/MobileNavBar';
 import MobileFooter from '../../components/Footer/Footer';
 
-const Faten=()=>{
+const Sameir=()=>{
 
     const footerRef = useRef<HTMLDivElement>(null);
     const aboutUsRef = useRef<HTMLDivElement>(null);
@@ -29,13 +29,18 @@ const Faten=()=>{
             <MobileNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices}/>
             <AboutUsContainer>
                 <AboutUsDesc>
-                    <Title>نبذة عنا</Title>
-                    <Title>فاتن ابوربيع</Title>
-                    <Description>حاصلة على اللقب الأول في التربية اللا منهجية واللقب الثاني في الإدارة التربوية</Description>
-                    <Description>باحثة دكتوراة في التنمية البشرية والإرشاد الأسري، ومستشارة في الإرشاد الأسري والزوجي</Description>
-                    <Description>يقدم تدريبًا للأفراد والعائلات والأزواج تشمل العديد من القضايا المختلفة</Description>
-                    <Description>مثل صعوبات العلاقات الزوجية والأسرية والذاتية ومشاكل التواصل</Description>
-                    <Description>يهدف لتمكين الأفراد وتزويدهم بالأدوات اللازمة لتحسين العلاقات والأساليب الوالدية</Description>
+                    <ContainerProfileImage>
+                    <Title>نبذة عن</Title>
+                    <Title>سمير ابوربيع</Title>
+                    <ProfileImage/>
+                    </ContainerProfileImage>
+                    <Description>خبرة طويلة في مجال التربية والارشاد والتدريب</Description>
+                    <Description>مستشار في العلاقات الزوجية والاسرية والجنسية،</Description>
+                    <Description>حاصل على اللقب الاول في التربية اللا منهجية واللقب الثاني في الادارة التربوية</Description>
+                    <Description>باحث دكتوراة في التنمية البشرية والارشاد الاسري </Description>
+                    <Description>PHD In Human Development And Family Counseling.</Description>
+                    <Description>Simulation موجه مجموعات ومرشد محاكاة </Description>
+
                 </AboutUsDesc>
             </AboutUsContainer>
             
@@ -43,4 +48,4 @@ const Faten=()=>{
         </Container>
     )
 }
-export default Faten;
+export default Sameir;

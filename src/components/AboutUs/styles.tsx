@@ -85,7 +85,16 @@ export const Description = styled.p`
   color: #fff;
   line-height: 1.5;
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 19px;
+  }
+  direction: rtl;
+`;
+export const Description2 = styled.p`
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+  @media (max-width: 768px) {
+    font-size: 19px;
   }
   direction: rtl;
 `;

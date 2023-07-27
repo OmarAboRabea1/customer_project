@@ -13,13 +13,19 @@ export const MobileNavBar: React.FC<MobileNavBarProps> = ({
   scrollToAboutUs,
   scrollToOurServices,
 }) => {
+
+  const NavigateToWhatsApp = () => {
+    window.open("https://wa.me/+972547100240");
+}
+
+  
     return(
       <Nav_Container>
         <Box_img>
             <Logo_img href="/"/>
         </Box_img>
         <MobileHamburger 
-          scrollToFooter={scrollToFooter}
+          scrollToFooter={NavigateToWhatsApp}
           scrollToAboutUs={scrollToAboutUs}
           scrollToOurServices={scrollToOurServices}
         />

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import heroImage from "../../assests/marriage_hero.jpeg";
+import heroImage from "../../assests/marriageHero5.jpeg";
 import facebookIcon from "../../assests/FacebookIcon.svg";
 import whatsappIcon from "../../assests/WhatsappIcon.svg";
 import instagramIcon from "../../assests/InstagramIcon.svg";
