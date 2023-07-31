@@ -49,17 +49,17 @@ const MobileAdSection = () => {
                       backgroundColor: 'rgba(0, 0, 0, 0.75)'
                     },
                     content: {
-                      width: '90%',  // You can specify these as per your requirements
+                      width: '90%',  
                       height: 'fit-content',
                       alignItems: 'center',
-                      marginTop: '50px', // This can be used to center the modal
+                      marginTop: '50px', 
                       position: 'absolute',
                       top: '50%',
                       left: '50%',
                       right: 'auto',
                       bottom: 'auto',
                       transform: 'translate(-50%, -50%)'                    },
-                  }} // This makes the modal appear above everything else
+                  }} 
             >
                 <button onClick={closeModal} style={{ position: 'absolute', right: 10, top: 10 }}>X</button>
                 {selectedAd && <AdImageOut src={selectedAd.imageUrl} onClick={handleAdClick} style={{ cursor: 'pointer' }}/>}

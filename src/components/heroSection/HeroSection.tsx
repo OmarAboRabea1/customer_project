@@ -23,8 +23,8 @@ export const MobileHeroSection = ({
 
   let navigate = useNavigate();
 
-  const NavigateToAbout = () => {
-    navigate('/about');
+  const NavigateToOurWork = () => {
+    navigate('/ourWork');
 }
 
   return (
@@ -34,7 +34,7 @@ export const MobileHeroSection = ({
         <Title>مركز الامان</Title>
         <Subtitle>للاستشارات الزوجية, الاسرية وتطوير الذات</Subtitle>
         <ButtonContainer>
-          <Button onClick={NavigateToAbout}>تعرف على المزيد</Button>
+          <Button onClick={NavigateToOurWork}>اعمالنا  </Button>
           <Button onClick={scrollToOurServices}>احجز استشارتك</Button>
         </ButtonContainer>
         <IconContainer>

@@ -1,11 +1,12 @@
 import React, { forwardRef } from 'react';
-import { ContactButtons, FooterContainer, LinkedInIcon, RightsText, WhatsappIcon } from './styles';
+import { ContactButtons, Container, FooterContainer, LinkedInIcon, RightsText, WhatsappIcon } from './styles';
 import { IconContainer } from '../heroSection/styles';
 
 const MobileFooter = forwardRef<HTMLDivElement, {}>((props, ref) => {
     const currentYear = new Date().getFullYear();
 
     return(
+      <Container>
         <FooterContainer ref={ref}>
           <RightsText>All rights reserved: Omar Abo Rabea {currentYear}</RightsText>
           <ContactButtons>
@@ -15,6 +16,8 @@ const MobileFooter = forwardRef<HTMLDivElement, {}>((props, ref) => {
             </IconContainer>
           </ContactButtons>
         </FooterContainer>
+      </Container>
+
     )
 });
 export default MobileFooter;

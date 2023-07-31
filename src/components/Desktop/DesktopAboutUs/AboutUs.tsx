@@ -33,7 +33,7 @@ export const DesktopAboutUs = forwardRef<HTMLDivElement, {}>((props, ref) => {
             <MoreAboutButton onClick={navigateToAbout}> للمزيد من التفاصيل</MoreAboutButton>
           </AboutUsDesc>
           <AboutUsDesc>
-            <TitleSmaller> تقدم الاستشارة والدورات على ايدي مختصي المركز:</TitleSmaller>
+            <TitleSmaller> تقدم الاستشارة والدورات على ايدي مختصين:</TitleSmaller>
             <Description>سمير ابو ربيع :  استشاري  في  العلاقات  الزوجية,  الاسرية والجنسية </Description>
             <MoreButton onClick={navigateToSameir}>للمزيد عن سمير</MoreButton>
             <Description>فاتن حاج عيسى ابو ربيع: مستشارة في العلاقات الزوجية والاسرية  </Description>

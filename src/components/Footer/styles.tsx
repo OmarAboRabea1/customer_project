@@ -2,6 +2,15 @@ import styled from "styled-components"
 import linkedInIcon from '../../assests/LinkedInIcon.svg';  
 import whatsappIcon from '../../assests/WhatsappIcon.svg'; 
 
+export const Container = styled.div`
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+`
+
 export const IconContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -12,6 +21,7 @@ export const IconContainer = styled.div`
 `
 
 export const FooterContainer = styled.footer`
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;

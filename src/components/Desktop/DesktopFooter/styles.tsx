@@ -3,12 +3,13 @@ import linkedInIcon from '../../../assests/LinkedInIcon.svg';
 import whatsappIcon from '../../../assests/WhatsappIcon.svg'; 
 
 export const Container = styled.div`
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    bottom: 0px;
-    justify-content: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  z-index: 1;
 `
 
 export const Footer_Container = styled.div`
@@ -43,12 +44,14 @@ export const Logo_box = styled.div`
     width: 100%;
 `
 export const FooterContainer = styled.footer`
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80px;
   background-color: #333333;
   color: #ffffff;
+  
 `;
 export const FooterLine = styled.div`
   width: 100%;

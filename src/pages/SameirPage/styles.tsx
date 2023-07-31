@@ -19,6 +19,8 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    min-height: 95vh;
+    justify-content: space-between;
 `
 export const ProfileImage = styled.div`
     width: 100px;
@@ -36,8 +38,8 @@ export const AboutUsContainer = styled.div`
   align-items: center;
   height: fit-content;
   background-color: ${Colors.light};
-  flex-direction: row;
-  padding: 50px;
+  flex-direction: column;
+  padding: 25px;
   @media (max-width: 768px) {
       flex-direction: column;
       padding: 25px;
@@ -48,9 +50,9 @@ export const AboutUsDesc = styled.div`
   display: flex;
   align-items: center;  
   justify-content: center;  
-  flex-direction: row;
   text-align: center;
-  padding: 40px;
+  flex-direction: column;
+  padding: 20px;
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 20px;
@@ -64,7 +66,7 @@ export const ContainerProfileImage = styled.div`
   justify-content: space-between;  
   flex-direction: row-reverse;
   text-align: center;
-  padding: 40px;
+  padding: 20px;
   @media (max-width: 768px) {
     flex-direction: row-reverse ;
     padding: 20px;
@@ -74,9 +76,9 @@ export const ContainerProfileImage = styled.div`
 
 export const Title = styled.h2`
   font-family: ${FontFamily};
-  font-size: 32px;
   color: ${Colors.primary};
-  margin-bottom: 30px;
+  font-size: 24px;
+  margin-bottom: 20px;
   @media (max-width: 768px) {
     font-size: 24px;
     margin-bottom: 20px;
@@ -85,10 +87,10 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   font-family: ${FontFamily};
-  font-size: 20px;
   color: ${Colors.dark};
   line-height: 1.5;
-  margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 15px;
   @media (max-width: 768px) {
     font-size: 18px;
     margin-bottom: 15px;

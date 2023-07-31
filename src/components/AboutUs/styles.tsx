@@ -46,7 +46,7 @@ export const AboutUsContainer = styled.div`
   align-items: center;
   height: fit-content;
   background-color: #222;
-  flex-direction: row;
+  flex-direction: column;
   @media (max-width: 768px) {
       flex-direction: column;
   }
@@ -54,14 +54,14 @@ export const AboutUsContainer = styled.div`
 
 export const AboutUsDesc = styled.div`
   text-align: center;
-  padding: 40px;
+  padding: 20px;
   @media (max-width: 768px) {
     padding: 20px;
   }
 `;
 
 export const Title = styled.h2`
-  font-size: 24px;
+    font-size: 20px;
   color: #fff;
   margin-bottom: 20px;
   direction: rtl;
@@ -71,7 +71,7 @@ export const Title = styled.h2`
 `;
 
 export const TitleSmaller = styled.h2`
-  font-size: 24px;
+    font-size: 16px;
   color: #fff;
   margin-bottom: 20px;
   direction: rtl;
@@ -81,7 +81,7 @@ export const TitleSmaller = styled.h2`
 `;
 
 export const Description = styled.p`
-  font-size: 18px;
+  font-size: 19px;
   color: #fff;
   line-height: 1.5;
   @media (max-width: 768px) {
@@ -90,7 +90,7 @@ export const Description = styled.p`
   direction: rtl;
 `;
 export const Description2 = styled.p`
-  font-size: 18px;
+  font-size: 19px;
   color: #fff;
   line-height: 1.5;
   @media (max-width: 768px) {
@@ -103,7 +103,8 @@ export const MoreButton = styled.button`
   background-color: #4F46E5; // Replace with your desired button color
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  font-size: 14px;
+  padding: 8px 16px;
   margin-top: 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -123,7 +124,8 @@ export const MoreAboutButton = styled.button`
   background-color: #4F46E5; // Replace with your desired button color
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  font-size: 15px;
+  padding: 8px 16px;
   margin-top: 10px;
   cursor: pointer;
   border-radius: 5px;

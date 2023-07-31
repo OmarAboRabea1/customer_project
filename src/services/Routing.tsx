@@ -17,6 +17,9 @@ import DesktopAboutUsPage from "../pages/DesktopAboutUsPage/DesktopAboutUsPage";
 import DesktopServicesPage from "../pages/DesktopServicesPage/DesktopServicesPage";
 import ServicesPage from "../pages/ServicesPage/ServicesPage";
 import { ScrollContext, useScroll } from "../Helpers/ScrollContext";
+import OurWorkPage from "../pages/OurWorkPage/OurWorkPage";
+import DesktopOurWorkPage from "../pages/DesktopOurWorkPage/DesktopOurWorkPage";
+
 
 
 const ScrollManager = () => {
@@ -61,6 +64,7 @@ const ScrollManager = () => {
                   <Route path="services/family_counseling" element={<MobileFamilyCounseling />} />
                   <Route path="services/self_improve" element={<MobileSelfImprove />} />
                   <Route path="services/couples_counseling" element={<MobileCouplesCounseling />} />
+                  <Route path="ourWork" element={<OurWorkPage />} />
                 </>
               }
               {Number(windowSize!) >= 1024 &&
@@ -72,6 +76,8 @@ const ScrollManager = () => {
                   <Route path="services/family_counseling" element={<DesktopFamilyCounseling />} />
                   <Route path="services/self_improve" element={<DesktopSelfImprove />} />
                   <Route path="services/couples_counseling" element={<DesktopCouplesCounseling />} />
+                  <Route path="ourWork" element={<DesktopOurWorkPage />} />
+
                 </>
               }
             </Route>
