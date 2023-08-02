@@ -57,8 +57,8 @@ const ScrollManager = () => {
               <Route index element={<HomePage />} />
               {Number(windowSize!) < 1024 &&
                 <>
-                  <Route path="about/Sameir" element={<Sameir />} />
-                  <Route path="about/Faten" element={<Faten />} />
+                  <Route path="about/sameir" element={<Sameir />} />
+                  <Route path="about/faten" element={<Faten />} />
                   <Route path="about" element={<AboutUsPage />} />
                   <Route path="services" element={<ServicesPage />} />
                   <Route path="services/family_counseling" element={<MobileFamilyCounseling />} />
@@ -69,8 +69,8 @@ const ScrollManager = () => {
               }
               {Number(windowSize!) >= 1024 &&
                 <>
-                  <Route path="about/Sameir" element={<DesktopSameirPage />} />
-                  <Route path="about/Faten" element={<DesktopFatenPage />} />
+                  <Route path="about/sameir" element={<DesktopSameirPage />} />
+                  <Route path="about/faten" element={<DesktopFatenPage />} />
                   <Route path="about" element={<DesktopAboutUsPage />} />
                   <Route path="services" element={<DesktopServicesPage />} />
                   <Route path="services/family_counseling" element={<DesktopFamilyCounseling />} />

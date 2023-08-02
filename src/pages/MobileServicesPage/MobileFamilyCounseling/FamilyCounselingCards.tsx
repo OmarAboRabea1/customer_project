@@ -15,13 +15,13 @@ export const FamilyCounselingCards = () => (
     <CardsSection>
     <Title>كيفية الحصول على استشارة خاصة</Title>
     <CardContainer>
-        <CardTitle>استشارة هاتفية</CardTitle>
+    <CardTitle>استشارة هاتفية</CardTitle>
         <CardDescription>استشارة عن طريق الهاتف</CardDescription>
-        <CardDescription> ايام الثلاثاء والاربعاء من كل اسبوع </CardDescription>
-        <CardDescription> 10:00 - 13:00 </CardDescription>
+        <CardDescription> ايام الاربعاء و الجمعة </CardDescription>
+        <CardDescription> من الساعة الرابعة الى السابعة </CardDescription>
         <CardTitle>تكلفة الاستشارة</CardTitle>
         <Price_container>
-        <CardPriceDescription> 150 شيكل </CardPriceDescription>
+        <CardPriceDescription> 100 شيكل </CardPriceDescription>
         <CardSubDescription>استشارة لمدة نصف ساعة </CardSubDescription>
         </Price_container>
         <ButtonContainer>
@@ -35,14 +35,14 @@ export const FamilyCounselingCards = () => (
 
     </CardContainer>
     <CardContainer>
-        <CardTitle>استشارة هاتفية</CardTitle>
-        <CardDescription>استشارة عن طريق الهاتف</CardDescription>
-        <CardDescription> ايام الثلاثاء والاربعاء من كل اسبوع </CardDescription>
-        <CardDescription> 10:00 - 13:00 </CardDescription>
+    <CardTitle>استشارة وجاهية</CardTitle>
+        <CardDescription> استشارة بالزوم</CardDescription>
+        <CardDescription> ايام الخميس والسبت </CardDescription>
+        <CardDescription> من الساعة الرابعة الى السابعة </CardDescription>
         <CardTitle>تكلفة الاستشارة</CardTitle>
         <Price_container>
-        <CardPriceDescription> 150 شيكل </CardPriceDescription>
-        <CardSubDescription>استشارة لمدة نصف ساعة </CardSubDescription>
+        <CardPriceDescription> 250 شيكل </CardPriceDescription>
+        <CardSubDescription>استشارة لمدة ساعة </CardSubDescription>
         </Price_container>
         <ButtonContainer>
             <CardButton onClick={handleButtonClick}>

@@ -31,15 +31,15 @@ const Sameir=()=>{
                 <AboutUsDesc>
                     <ContainerProfileImage>
                     <Title>نبذة عن</Title>
-                    <Title>سمير ابوربيع</Title>
+                    <Title>فاتن حاج عيسى ابوربيع</Title>
                     <ProfileImage/>
                     </ContainerProfileImage>
-                    <Description>خبرة طويلة في مجال التربية والارشاد والتدريب</Description>
-                    <Description>مستشار في العلاقات الزوجية والاسرية والجنسية،</Description>
-                    <Description>حاصل على اللقب الاول في التربية اللا منهجية واللقب الثاني في الادارة التربوية</Description>
-                    <Description>باحث دكتوراة في التنمية البشرية والارشاد الاسري </Description>
-                    <Description>PHD In Human Development And Family Counseling.</Description>
-                    <Description>Simulation موجه مجموعات ومرشد محاكاة </Description>
+                    <Description>مستشارة بالعلاقات الزوجية والاسرية والجنسية </Description>
+                    <Description>حاصلة على اللقب الاول في التربية المجتمعية </Description>
+                    <Description>موجهة مجموعات ومدربة في تطوير الذات </Description>
+                    <Description>باحثة دكتوراة في العلاقات الاسرية</Description>
+                    <Description>PHD In Family Counseling.</Description>
+                    <Description>Simulation موجهة مجموعات ومرشدة محاكاة </Description>
 
                 </AboutUsDesc>
             </AboutUsContainer>

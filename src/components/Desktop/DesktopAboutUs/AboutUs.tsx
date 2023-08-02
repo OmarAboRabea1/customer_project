@@ -29,7 +29,7 @@ export const DesktopAboutUs = forwardRef<HTMLDivElement, {}>((props, ref) => {
         <AboutUsContainer ref={ref}>
           <AboutUsDesc>
             <Title>من نحن</Title>
-            <Description>يقدم المركز خدمات استشارية وتوجيهية للأفراد والازواج والعائلات الذين يبحثون عن التغيير الإيجابي في حياتهم.</Description>
+            <Description> مركز الامان هو مركز مختص بالاستشارات الزوجية والاسرية والجنسية بالاضافة الى دورات في تطوير الذات</Description>
             <MoreAboutButton onClick={navigateToAbout}> للمزيد من التفاصيل</MoreAboutButton>
           </AboutUsDesc>
           <AboutUsDesc>
@@ -37,7 +37,7 @@ export const DesktopAboutUs = forwardRef<HTMLDivElement, {}>((props, ref) => {
             <Description>سمير ابو ربيع :  استشاري  في  العلاقات  الزوجية,  الاسرية والجنسية </Description>
             <MoreButton onClick={navigateToSameir}>للمزيد عن سمير</MoreButton>
             <Description>فاتن حاج عيسى ابو ربيع: مستشارة في العلاقات الزوجية والاسرية  </Description>
-            <MoreButton onClick={navigateToSameir}>للمزيد عن فاتن</MoreButton>
+            <MoreButton onClick={navigateToFaten}>للمزيد عن فاتن</MoreButton>
           </AboutUsDesc>
         </AboutUsContainer>
     );

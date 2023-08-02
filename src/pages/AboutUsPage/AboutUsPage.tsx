@@ -28,15 +28,15 @@ const AboutUsPage=()=>{
         <Container>
             <MobileNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices}/>
             <AboutUsContainer>
-                <AboutUsDesc>
-                    <Title>نبذة عنا</Title>
-                    <Title>فاتن ابوربيع</Title>
-                    <Description>حاصلة على اللقب الأول في التربية اللا منهجية واللقب الثاني في الإدارة التربوية</Description>
-                    <Description>باحثة دكتوراة في التنمية البشرية والإرشاد الأسري، ومستشارة في الإرشاد الأسري والزوجي</Description>
-                    <Description>يقدم تدريبًا للأفراد والعائلات والأزواج تشمل العديد من القضايا المختلفة</Description>
-                    <Description>مثل صعوبات العلاقات الزوجية والأسرية والذاتية ومشاكل التواصل</Description>
-                    <Description>يهدف لتمكين الأفراد وتزويدهم بالأدوات اللازمة لتحسين العلاقات والأساليب الوالدية</Description>
-                </AboutUsDesc>
+            <AboutUsDesc>
+                <Title>نبذة عنا</Title>
+                <Title> مركز الامان</Title>
+                <Description>الامان للاستشارات الزوجية والاسرية والجنسية يسعى الى تقديم الادوات الفعلية للازواج</Description>
+                <Description>للحصول على علاقات زوجية آمنة وطرق تساعد الازواج للحلول العملية</Description>
+                <Description>اللازمة في حل الخلافات والمشاكل الزوجية ووسائل فعلية لمشاكلهم الجنسية ،</Description>
+                <Description> بالاضافة الى تقديم استشارات عائلية التي تدعم الاباء في كيفية التعامل مع ابنائهم .</Description>
+                <Description>الامان يسعى الى تطوير الفرد والتعرف على ذاته ويساعده على تعريف هدفه في الحياة للوصول الى النسخة الافضل من نفسه.</Description>
+            </AboutUsDesc>
             </AboutUsContainer>
             
             <MobileFooter ref={footerRef}/>

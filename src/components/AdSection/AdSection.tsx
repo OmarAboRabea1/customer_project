@@ -1,21 +1,23 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import { AdContainer, AdImage, AdImageOut, AdSectionContainer, Heading, container_for_ads } from './styles';
+import { AdContainer, AdImage, AdImageOut, AdSectionContainer, ButtonContainer, Heading, MoreForAds, container_for_ads } from './styles';
 import dopamine from '../../assests/dopamine.jpeg'; // replace this with the path to your ad image
 import findYourSelf from '../../assests/find_your_self.jpeg'; // replace this with the path to your ad image
+import { useNavigate } from "react-router-dom";
 
-Modal.setAppElement('#root'); // Assuming that your app's root element has id 'root'
 
-// Here you define your ads with their corresponding URLs
+Modal.setAppElement('#root'); 
 const ads = [
   {imageUrl: dopamine, link: "https://me-qr.com/HUGbGJMk"},
   {imageUrl: findYourSelf, link: "https://me-qr.com/HUGbGJMk"},
-  // add more ads here
 ]
+
 
 const MobileAdSection = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [selectedAd, setSelectedAd] = useState<{imageUrl: string, link: string} | null>(null);
+
+    const navigate = useNavigate();
 
     function openModal(ad: {imageUrl: string, link: string}) {
         setSelectedAd(ad);
@@ -28,9 +30,13 @@ const MobileAdSection = () => {
     }
 
     function handleAdClick() {
-        // Open a new tab with the ad's URL
         window.open(selectedAd?.link, "_blank");
     }
+
+    const navigateToOurWork = () => {
+        navigate('/ourWork');
+    }
+    
 
     return (
         <AdSectionContainer>
@@ -64,6 +70,9 @@ const MobileAdSection = () => {
                 <button onClick={closeModal} style={{ position: 'absolute', right: 10, top: 10 }}>X</button>
                 {selectedAd && <AdImageOut src={selectedAd.imageUrl} onClick={handleAdClick} style={{ cursor: 'pointer' }}/>}
             </Modal>
+            <ButtonContainer>
+                <MoreForAds onClick={navigateToOurWork}> لجميع ورشاتنا ودوراتنا</MoreForAds>
+            </ButtonContainer>
         </AdSectionContainer>
     );
 }

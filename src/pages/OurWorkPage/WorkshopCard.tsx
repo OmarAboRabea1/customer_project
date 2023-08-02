@@ -1,21 +1,61 @@
 import { useState } from 'react';
-import { WorkshopButton, WorkshopCard_container, WorkshopImage, ContainerWorkshopCards } from './styles';
+import { WorkshopButton, WorkshopCard_container, WorkshopImage, ContainerWorkshopCards, Description_container, Description, Buttons_Container, Description_container_inModal } from './styles';
 import { InModal_container, SliderImage_container } from './styles';
 import { FiArrowLeftCircle, FiArrowRightCircle } from 'react-icons/fi';
+import Modal from 'react-modal';
+
 
 
 interface WorkshopCardProps {
   image: string;
+  description: string;
+  LongDescription: string;
   onButtonClick: () => void;  
 }
 
-export const WorkshopCard: React.FC<WorkshopCardProps> = ({ image, onButtonClick }) => {
+export const WorkshopCard: React.FC<WorkshopCardProps> = ({ image, description, LongDescription, onButtonClick }) => {
+
+  const [isModalOpen, setModalOpen] = useState(false);
+  const handleButtonClick = () => {
+    setModalOpen(true);
+};
+
+
   return (
-    <WorkshopCard_container>
+      <WorkshopCard_container>
+          <Description_container>
+          <Description>{description}</Description>
+          </Description_container>
       <ContainerWorkshopCards>
         <WorkshopImage src={image} alt="Workshop" />
-        <WorkshopButton onClick={onButtonClick}>عرض المزيد</WorkshopButton>
+        <Buttons_Container>
+          <WorkshopButton onClick={onButtonClick}>لعرض المزيد من الصور</WorkshopButton>
+          <WorkshopButton onClick={handleButtonClick}>للمزيد عن الورشة</WorkshopButton>
+        </Buttons_Container>
       </ContainerWorkshopCards>
+      <Modal isOpen={isModalOpen} onRequestClose={() => setModalOpen(false)}
+                style={{
+                    overlay: { 
+                        backgroundColor: 'rgba(0, 0, 0, 0.75)'
+                    },
+                    content: {
+                        width: '50%',  
+                        height: '60%',
+                        alignItems: 'center',
+                        marginTop: '50px', 
+                        top: '50%',
+                        left: '50%',
+                        right: 'auto',
+                        bottom: 'auto',
+                        transform: 'translate(-50%, -50%)'                    },
+                    }} 
+            >
+        <button onClick={() => setModalOpen(false)} style={{ position: 'absolute', right: 30, top: 30, background: 'none', border: 'none', fontSize: '1.8rem', cursor: 'pointer' }}>X</button>
+        <Description_container_inModal>
+        <Description>{LongDescription}</Description>
+        </Description_container_inModal>
+
+        </Modal>
     </WorkshopCard_container>
   );
 };

@@ -76,19 +76,6 @@ export const Title = styled.h2`
   }
 `;
 
-export const Description = styled.p`
-  font-family: ${FontFamily};
-  font-size: 20px;
-  color: ${Colors.dark};
-  line-height: 1.5;
-  margin-bottom: 20px;
-  @media (max-width: 768px) {
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
-`;
-
-
 
 export const WorkshopImage = styled.img`
     width: 100%;
@@ -102,10 +89,12 @@ export const WorkshopButton = styled.button`
   border: 1px solid #f9a0a0; 
   font-size: 20px;
   transition: all 0.3s ease; 
+  border-radius: 7%;
   &:hover {
       background-color: #544a4a; 
       color: #f18e8e; 
-      border: 1px solid #ec0404; 
+      border: 1px solid #ec0404;
+      border-radius: 7%; 
       cursor: pointer;
   }
 `;
@@ -137,21 +126,33 @@ export const CardContainer = styled.div`
   align-items: center; 
   width: 100%;
 `;
-
 export const WorkshopCard_container = styled.div`
-  width: 80%; 
-  margin: 10px auto;
+    width: fit-content;
+    margin: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;
+    direction: rtl;
+    gap: 20px;
+`;
+export const Buttons_Container = styled.div`
+  width: 100%;
   display: flex;
-  flex-direction: column; 
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
 `;
 
 export const ContainerWorkshopCards = styled.div`
-  padding: 20px; 
-  width: 100%;
+  padding-top: 30px;
+  width: 300px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  justify-content: center;
 `;
 
 export const InModal_container = styled.div`
@@ -161,4 +162,25 @@ export const InModal_container = styled.div`
   flex-direction: column; // Here we change from row to column
   align-items: center;
   justify-content: space-between;
+`;
+
+
+export const Description = styled.p`
+  font-family: ${FontFamily};
+  font-size: 18px;
+  color: ${Colors.dark};
+  line-height: 1.5;
+  margin-bottom: 20px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+`;
+
+export const Description_container = styled.div`
+  width: 60%;
+`;
+export const Description_container_inModal = styled.div`
+  width: 100%;
+  padding-top: 20px;
 `;

@@ -25,10 +25,11 @@ export const Container = styled.div`
 
 export const CardContainer = styled.div`
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     gap: 40px;
     flex-wrap: nowrap;
     width: 100%;
+    direction: rtl;
     
 `;
 
@@ -97,7 +98,7 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   font-family: ${FontFamily};
-  font-size: 20px;
+  font-size: 18px;
   color: ${Colors.dark};
   line-height: 1.5;
   margin-bottom: 20px;
@@ -107,19 +108,38 @@ export const Description = styled.p`
   }
 `;
 
+export const Description_container = styled.div`
+  width: 60%;
+`;
 
 
+export const Description_container_inModal = styled.div`
+  width: 100%;
+  padding-top: 20px;
+`;
+
+export const Buttons_Container = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+`;
 
 export const WorkshopCard_container = styled.div`
     width: fit-content;
-    margin: 10px;
+    margin: 25px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;
+    direction: rtl;
+    gap: 20px;
 `;
 
 export const ContainerWorkshopCards = styled.div`
   padding-top: 30px;
-  width: 250px;
+  width: 300px;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -132,7 +152,9 @@ export const WorkshopImage = styled.img`
     width: 100%;
     height: 80%;
     object-fit: cover;
+    object-position: center;
 `;
+
 
 export const WorkshopButton = styled.button`
   background-color: #f7efef; 

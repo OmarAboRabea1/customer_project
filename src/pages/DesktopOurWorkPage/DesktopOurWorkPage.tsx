@@ -53,8 +53,21 @@ const DesktopOurWorkPage=()=>{
         <Container>
             <DesktopNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices}/>
             <CardContainer>
-                <WorkshopCard image={image_1} onButtonClick={() => handleButtonClick([image_2, image_3, image_4])} />
-                <WorkshopCard image={image_5} onButtonClick={() => handleButtonClick([image_6, image_7, image_1])} />   
+            <WorkshopCard 
+                image={image_1} 
+                description='بصفحة اعمالنا في بس موضوعين ... اذا بدنا نزيد كمان اشي .. يعني اسا بدنا نحط الورشتين بصور صغيرة وكمان بدنا نحط عن الزواج الناجح وويكون في شرح بسيط ومعرض صور' 
+                LongDescription='بصفحة اعمالنا في بس موضوعين ... اذا بدنا نزيد كمان اشي .. يعني اسا بدنا نحط الورشتين بصور صغيرة وكمان بدنا نحط عن الزواج الناجح وويكون في شرح بسيط ومعرض صور' 
+                onButtonClick={() => handleButtonClick([image_2, image_3, image_4])} />
+                <WorkshopCard 
+                image={image_5} 
+                description='اسم الورشة ... صورة مصغرة عن الورشة .... كبسة المزيد واءا بكبس بنتقل لشرح عن الورشة وكبسة معرض صور اللي فيهن صور مع السابق والتالي زي اللي عملتها' 
+                LongDescription='اسم الورشة ... صورة مصغرة عن الورشة .... كبسة المزيد واءا بكبس بنتقل لشرح عن الورشة وكبسة معرض صور اللي فيهن صور مع السابق والتالي زي اللي عملتها' 
+                onButtonClick={() => handleButtonClick([image_6, image_7, image_1])} />   
+                <WorkshopCard 
+                image={image_5} 
+                description='اسم الورشة ... صورة مصغرة عن الورشة .... كبسة المزيد واءا بكبس بنتقل لشرح عن الورشة وكبسة معرض صور اللي فيهن صور مع السابق والتالي زي اللي عملتها' 
+                LongDescription='اسم الورشة ... صورة مصغرة عن الورشة .... كبسة المزيد واءا بكبس بنتقل لشرح عن الورشة وكبسة معرض صور اللي فيهن صور مع السابق والتالي زي اللي عملتها' 
+                onButtonClick={() => handleButtonClick([image_6, image_7, image_1])} />   
             </CardContainer>
             <Modal isOpen={isModalOpen} onRequestClose={() => setModalOpen(false)}
                 style={{
@@ -70,7 +83,8 @@ const DesktopOurWorkPage=()=>{
                         left: '50%',
                         right: 'auto',
                         bottom: 'auto',
-                        transform: 'translate(-50%, -50%)'                    },
+                        transform: 'translate(-50%, -50%)'                    
+                    },
                     }} 
             >
             <button onClick={() => setModalOpen(false)} style={{ position: 'absolute', right: 30, top: 30, background: 'none', border: 'none', fontSize: '1.8rem', cursor: 'pointer' }}>X</button>
