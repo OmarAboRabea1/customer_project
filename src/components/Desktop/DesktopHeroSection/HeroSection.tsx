@@ -10,6 +10,9 @@ export const DesktopHeroSection = ({scrollToOurServices}: {scrollToOurServices: 
   const NavigateToOurWork = () => {
     navigate('/ourWork');
 }
+const NavigateToServices = () => {
+    navigate('/services');
+  }
 
     return(
             <Search_Container>
@@ -19,7 +22,7 @@ export const DesktopHeroSection = ({scrollToOurServices}: {scrollToOurServices: 
                     <Subtitle>للاستشارات الزوجية, الاسرية وتطوير الذات</Subtitle>
                     <ButtonContainer>
                         <Button onClick={NavigateToOurWork}> اعمالنا </Button>
-                        <Button onClick={scrollToOurServices}>احجز استشارتك</Button>
+                        <Button onClick={NavigateToServices}>احجز استشارتك</Button>
                     </ButtonContainer>
                     <IconContainer>
                         <FacebookIcon href="https://www.facebook.com/afaq.edu"/>

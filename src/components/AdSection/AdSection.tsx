@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 Modal.setAppElement('#root'); 
 const ads = [
   {imageUrl: dopamine, link: "https://me-qr.com/HUGbGJMk"},
-  {imageUrl: findYourSelf, link: "https://me-qr.com/HUGbGJMk"},
+  {imageUrl: findYourSelf, link: "https://me-qr.com/aysx8CU5"},
 ]
 
 

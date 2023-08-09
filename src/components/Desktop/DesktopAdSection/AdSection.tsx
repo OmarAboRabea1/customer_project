@@ -31,7 +31,7 @@ const DesktopAdSection = () => {
             <AdImage 
               src={findYourSelf} 
               alt="find your self" 
-              onClick={() => handleAdClick('https://me-qr.com/HUGbGJMk')} 
+              onClick={() => handleAdClick('https://me-qr.com/aysx8CU5')} 
             />
           </AdContainer>
           <ButtonContainer>

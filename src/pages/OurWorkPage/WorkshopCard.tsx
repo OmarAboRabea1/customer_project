@@ -21,6 +21,15 @@ export const WorkshopCard: React.FC<WorkshopCardProps> = ({ title, image, descri
     setModalOpen(true);
 };
 
+const formatLongDescription = () => {
+  return LongDescription.split('.').map((sentence, index, array) => (
+    <span key={index}>
+      {sentence + (index < array.length - 1 ? '.' : '')}
+      {index < array.length - 1 && <br />}
+    </span>
+  ));
+};
+
 
   return (
       <WorkshopCard_container>
@@ -54,7 +63,7 @@ export const WorkshopCard: React.FC<WorkshopCardProps> = ({ title, image, descri
             >
         <button onClick={() => setModalOpen(false)} style={{ position: 'absolute', right: 10, top: 10, background: 'none', border: 'none', fontSize: '1.8rem', cursor: 'pointer' }}>X</button>
         <Description_container_inModal>
-        <Description>{LongDescription}</Description>
+        <Description>{formatLongDescription()}</Description>
         </Description_container_inModal>
 
         </Modal>

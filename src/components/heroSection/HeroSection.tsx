@@ -26,6 +26,9 @@ export const MobileHeroSection = ({
   const NavigateToOurWork = () => {
     navigate('/ourWork');
 }
+const NavigateToServices = () => {
+  navigate('/services');
+}
 
   return (
     <Search_Container>
@@ -35,7 +38,7 @@ export const MobileHeroSection = ({
         <Subtitle>للاستشارات الزوجية, الاسرية وتطوير الذات</Subtitle>
         <ButtonContainer>
           <Button onClick={NavigateToOurWork}>اعمالنا  </Button>
-          <Button onClick={scrollToOurServices}>احجز استشارتك</Button>
+          <Button onClick={NavigateToServices}>احجز استشارتك</Button>
         </ButtonContainer>
         <IconContainer>
           <FacebookIcon href="https://www.facebook.com" />

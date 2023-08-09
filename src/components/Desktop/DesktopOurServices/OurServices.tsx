@@ -18,9 +18,9 @@ export const DesktopOurServices = forwardRef<HTMLDivElement, {}>((props, ref) =>
   };
 
   return(
-    <Services_Container>
+    <Services_Container ref={ref}>
       <Title>خدماتنا</Title>
-      <ServicesSection ref={ref}>
+      <ServicesSection>
       <ServiceCard
           imgUrl={self_improve}
           title="تطوير الذات"

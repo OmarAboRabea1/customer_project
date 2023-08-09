@@ -20,6 +20,10 @@ export const MobileNavBar: React.FC<MobileNavBarProps> = ({
 }
   let navigate = useNavigate();
 
+const NavigateToServices = () => {
+  navigate('/services');
+}
+
 const NavigateToOurWork = () => {
   navigate('/ourWork');
 }
@@ -34,7 +38,8 @@ const NavigateToOurWork = () => {
         <MobileHamburger 
           scrollToFooter={NavigateToWhatsApp}
           scrollToAboutUs={scrollToAboutUs}
-          scrollToOurServices={NavigateToOurWork}
+          scrollToOurServices={NavigateToServices}
+          scrollToOurWork={NavigateToOurWork}
         />
       </Nav_Container>
     )
