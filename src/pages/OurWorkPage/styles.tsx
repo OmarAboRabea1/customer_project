@@ -65,17 +65,6 @@ export const ContainerProfileImage = styled.div`
   }
 `;
 
-export const Title = styled.h2`
-  font-family: ${FontFamily};
-  font-size: 32px;
-  color: ${Colors.primary};
-  margin-bottom: 30px;
-  @media (max-width: 768px) {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-`;
-
 
 export const WorkshopImage = styled.img`
     width: 100%;
@@ -127,14 +116,20 @@ export const CardContainer = styled.div`
   width: 100%;
 `;
 export const WorkshopCard_container = styled.div`
+    padding-top: 30px;
+    padding-bottom: 30px;
     width: fit-content;
     margin: 10px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: right;
     align-items: center;
     direction: rtl;
     gap: 20px;
+        @media (max-width: 450px) {
+    width: 100%;
+    flex-direction: column-reverse;
+    padding-bottom: 0px;
+  }
 `;
 export const Buttons_Container = styled.div`
   width: 100%;
@@ -153,6 +148,19 @@ export const ContainerWorkshopCards = styled.div`
   gap: 10px;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
+  @media (max-width: 400px) {
+    font-size: 18px;
+      margin: 0px;
+  }
+`;
+export const Title = styled.h2`
+  font-family: ${FontFamily};
+  font-size: 32px;
+  color: ${Colors.primary};
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 export const InModal_container = styled.div`
@@ -170,17 +178,56 @@ export const Description = styled.p`
   font-size: 18px;
   color: ${Colors.dark};
   line-height: 1.5;
-  margin-bottom: 20px;
-  @media (max-width: 768px) {
+  text-align: start;
+  direction: rtl;
+  margin: 20px;
+    @media (max-width: 400px) {
     font-size: 18px;
-    margin-bottom: 15px;
+      margin: 0px;
   }
 `;
 
 export const Description_container = styled.div`
   width: 60%;
+    @media (max-width: 450px) {
+      width: 90%;
+      padding-top: 35px;
+  }
+  
 `;
 export const Description_container_inModal = styled.div`
   width: 100%;
   padding-top: 20px;
+`;
+
+export const SoonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #f3f3f3; 
+  border-radius: 10px;
+`;
+
+export const SoonTitle = styled.h2`
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+`;
+
+export const RegistrationButton = styled.button`
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px; 
+  cursor: pointer;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
 `;

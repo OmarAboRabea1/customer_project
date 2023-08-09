@@ -57,10 +57,11 @@ export const CardTitle = styled.h2`
 
 export const CardDescription = styled.p`
     color: #666;
-    text-align: center;
+    text-align: start;
     direction: rtl;
-`;
+    margin: 20px;
 
+`;
 export const CardButton = styled.button`
     display: inline-block;
     border-radius: 30px;

@@ -89,10 +89,8 @@ export const Title = styled.h2`
   font-family: ${FontFamily};
   font-size: 32px;
   color: ${Colors.primary};
-  margin-bottom: 30px;
   @media (max-width: 768px) {
     font-size: 24px;
-    margin-bottom: 20px;
   }
 `;
 
@@ -102,6 +100,9 @@ export const Description = styled.p`
   color: ${Colors.dark};
   line-height: 1.5;
   margin-bottom: 20px;
+  text-align: start;
+  direction: rtl;
+  margin: 20px;
   @media (max-width: 768px) {
     font-size: 18px;
     margin-bottom: 15px;
@@ -146,6 +147,7 @@ export const ContainerWorkshopCards = styled.div`
   gap: 10px;
   align-items: center;
   justify-content: center;
+
 `;
 
 export const WorkshopImage = styled.img`
@@ -191,4 +193,36 @@ export const InModal_container = styled.div`
     align-items: center;
     justify-content: space-between;
 
+`;
+
+export const SoonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #f3f3f3; 
+  border-radius: 10px;
+`;
+
+export const SoonTitle = styled.h2`
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+`;
+
+export const RegistrationButton = styled.button`
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px; 
+  cursor: pointer;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
 `;

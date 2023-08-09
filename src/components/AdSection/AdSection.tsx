@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { AdContainer, AdImage, AdImageOut, AdSectionContainer, ButtonContainer, Heading, MoreForAds, container_for_ads } from './styles';
-import dopamine from '../../assests/dopamine.jpeg'; // replace this with the path to your ad image
-import findYourSelf from '../../assests/find_your_self.jpeg'; // replace this with the path to your ad image
+import dopamine from '../../assests/dopamine.jpeg'; 
+import findYourSelf from '../../assests/find_your_self.jpeg'; 
 import { useNavigate } from "react-router-dom";
 
 

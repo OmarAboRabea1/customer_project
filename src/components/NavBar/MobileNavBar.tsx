@@ -1,6 +1,7 @@
 import React from 'react';
 import MobileHamburger from "./MobileHamburger";
 import { Box_img, Logo_img, Nav_Container } from './styles';
+import { useNavigate } from 'react-router-dom';
 
 interface MobileNavBarProps {
   scrollToFooter: () => void;
@@ -17,6 +18,12 @@ export const MobileNavBar: React.FC<MobileNavBarProps> = ({
   const NavigateToWhatsApp = () => {
     window.open("https://wa.me/+972547100240");
 }
+  let navigate = useNavigate();
+
+const NavigateToOurWork = () => {
+  navigate('/ourWork');
+}
+
 
   
     return(
@@ -27,7 +34,7 @@ export const MobileNavBar: React.FC<MobileNavBarProps> = ({
         <MobileHamburger 
           scrollToFooter={NavigateToWhatsApp}
           scrollToAboutUs={scrollToAboutUs}
-          scrollToOurServices={scrollToOurServices}
+          scrollToOurServices={NavigateToOurWork}
         />
       </Nav_Container>
     )

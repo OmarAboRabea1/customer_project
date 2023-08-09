@@ -1,4 +1,4 @@
-import { Buttons_Container, ContainerWorkshopCards, Description, Description_container, Description_container_inModal, InModal_container, SliderImage_container, WorkshopButton, WorkshopCard_container, WorkshopImage } from "./styles";
+import { Buttons_Container, ContainerWorkshopCards, Description, Description_container, Description_container_inModal, InModal_container, SliderImage_container, Title, WorkshopButton, WorkshopCard_container, WorkshopImage } from "./styles";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -11,13 +11,14 @@ import Modal from 'react-modal';
 
 
 interface WorkshopCardProps {
+  title: string;
   image: string;
   description: string;
   LongDescription: string;
   onButtonClick: () => void;  
 }
 
-export const WorkshopCard: React.FC<WorkshopCardProps> = ({ image, description, LongDescription, onButtonClick }) => {
+export const WorkshopCard: React.FC<WorkshopCardProps> = ({ title, image, description, LongDescription, onButtonClick }) => {
 
   const [isModalOpen, setModalOpen] = useState(false);
   const handleButtonClick = () => {
@@ -29,11 +30,12 @@ export const WorkshopCard: React.FC<WorkshopCardProps> = ({ image, description, 
             <Description>{description}</Description>
             </Description_container>
             <ContainerWorkshopCards>
-            <WorkshopImage src={image} alt="Workshop" />
-            <Buttons_Container>
-                <WorkshopButton onClick={onButtonClick}>لعرض المزيد من الصور</WorkshopButton>
-                <WorkshopButton onClick={handleButtonClick}>للمزيد عن الورشة</WorkshopButton>
-            </Buttons_Container>
+              <Title>{title}</Title>
+              <WorkshopImage src={image} alt="Workshop" />
+              <Buttons_Container>
+                  <WorkshopButton onClick={onButtonClick}>لعرض المزيد من الصور</WorkshopButton>
+                  <WorkshopButton onClick={handleButtonClick}>للمزيد عن الورشة</WorkshopButton>
+              </Buttons_Container>
             </ContainerWorkshopCards>
             <Modal isOpen={isModalOpen} onRequestClose={() => setModalOpen(false)}
                 style={{
@@ -41,7 +43,7 @@ export const WorkshopCard: React.FC<WorkshopCardProps> = ({ image, description, 
                         backgroundColor: 'rgba(0, 0, 0, 0.75)'
                     },
                     content: {
-                        width: '50%',  
+                        width: '80%',  
                         height: '60%',
                         alignItems: 'center',
                         marginTop: '50px', 
@@ -52,7 +54,7 @@ export const WorkshopCard: React.FC<WorkshopCardProps> = ({ image, description, 
                         transform: 'translate(-50%, -50%)'                    },
                     }} 
             >
-        <button onClick={() => setModalOpen(false)} style={{ position: 'absolute', right: 30, top: 30, background: 'none', border: 'none', fontSize: '1.8rem', cursor: 'pointer' }}>X</button>
+        <button onClick={() => setModalOpen(false)} style={{ position: 'absolute', right: 10, top: 10, background: 'none', border: 'none', fontSize: '1.8rem', cursor: 'pointer' }}>X</button>
         <Description_container_inModal>
         <Description>{LongDescription}</Description>
         </Description_container_inModal>
