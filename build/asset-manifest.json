@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.ba7feeda.css",
-    "main.js": "/static/js/main.9001d8ea.js",
+    "main.js": "/static/js/main.d664c86b.js",
     "static/js/787.4695255d.chunk.js": "/static/js/787.4695255d.chunk.js",
-    "static/media/find_your_self.jpeg": "/static/media/find_your_self.bca4172606d99e97521d.jpeg",
-    "static/media/dopamine.jpeg": "/static/media/dopamine.c150b982ce8a03a6cf82.jpeg",
     "static/media/Family_counseling.jpeg": "/static/media/Family_counseling.5abe35c3828b763a28a1.jpeg",
+    "static/media/find_your_self.jpeg": "/static/media/find_your_self.86b66f5830a25665ff4a.jpeg",
     "static/media/family_counseling2.jpeg": "/static/media/family_counseling2.cd8215e11913278ec5a5.jpeg",
+    "static/media/dopamine.jpeg": "/static/media/dopamine.62b64025a8a778c39eb2.jpeg",
     "static/media/family_counseling3.jpeg": "/static/media/family_counseling3.8b5f19b18e8cefcc8a6f.jpeg",
     "static/media/family_counseling8.jpeg": "/static/media/family_counseling8.419c4bb1a840c7f96718.jpeg",
+    "static/media/Logo.jpeg": "/static/media/Logo.9463780d6324af1ad22d.jpeg",
     "static/media/family_counseling6.jpeg": "/static/media/family_counseling6.250cf997fb49d394e526.jpeg",
     "static/media/family_counseling9.jpeg": "/static/media/family_counseling9.46555c629d4cd533f4be.jpeg",
     "static/media/marriage_workshop1.jpeg": "/static/media/marriage_workshop1.7f45d2ddbfa527ea2fb3.jpeg",
@@ -22,12 +23,13 @@
     "static/media/marriage_workshop6.jpeg": "/static/media/marriage_workshop6.148d9b5ac9ec338a6ddd.jpeg",
     "static/media/marriage_workshop4.jpeg": "/static/media/marriage_workshop4.3bc02079e0da3983bda7.jpeg",
     "static/media/marriage_workshop8.jpeg": "/static/media/marriage_workshop8.cf5dee735a11261dfff8.jpeg",
+    "static/media/faten_pic.jpeg": "/static/media/faten_pic.c40ce0da4111afbc5f4b.jpeg",
     "static/media/self_improve2.jpeg": "/static/media/self_improve2.23bb6b0f6fab9680cef9.jpeg",
     "static/media/family_counseling7.jpeg": "/static/media/family_counseling7.d03e1a9496ea905ccdf8.jpeg",
     "static/media/counsel1.jpeg": "/static/media/counsel1.3f339cd66b6ee8acfc69.jpeg",
     "static/media/counsel_family.jpeg": "/static/media/counsel_family.2151d19e627902d3499e.jpeg",
     "static/media/marriageHero4.jpeg": "/static/media/marriageHero4.024ac28f3c9ab04818d6.jpeg",
-    "static/media/Logo.jpeg": "/static/media/Logo.f6b82745dd3c848c551a.jpeg",
+    "static/media/sameir_pic.jpeg": "/static/media/sameir_pic.6c7f2e1f8026ccc0cccc.jpeg",
     "static/media/self_improve3.jpeg": "/static/media/self_improve3.eff0d592175cec2d443c.jpeg",
     "static/media/InstagramIcon.svg": "/static/media/InstagramIcon.c83e628eea4e83e0d2b6c8e54910510c.svg",
     "static/media/WhatsappIcon.svg": "/static/media/WhatsappIcon.7dc3f3267bee9b39fd8d08466208e48a.svg",
@@ -42,11 +44,11 @@
     "static/media/cart_img.svg": "/static/media/cart_img.0383ca9f7882be5cd547c84862be8eaf.svg",
     "static/media/FacebookIcon.svg": "/static/media/FacebookIcon.5e1cb4b86ac3f872dadcbde3ed31cd4b.svg",
     "main.ba7feeda.css.map": "/static/css/main.ba7feeda.css.map",
-    "main.9001d8ea.js.map": "/static/js/main.9001d8ea.js.map",
+    "main.d664c86b.js.map": "/static/js/main.d664c86b.js.map",
     "787.4695255d.chunk.js.map": "/static/js/787.4695255d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba7feeda.css",
-    "static/js/main.9001d8ea.js"
+    "static/js/main.d664c86b.js"
   ]
 }

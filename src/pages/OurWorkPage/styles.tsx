@@ -114,6 +114,7 @@ export const CardContainer = styled.div`
   gap: 40px;
   align-items: center; 
   width: 100%;
+  padding-bottom: 50px;
 `;
 export const WorkshopCard_container = styled.div`
     padding-top: 30px;

@@ -18,6 +18,10 @@ const DesktopAdSection = () => {
       navigate('/ourWork');
   }
   
+  const navigateToAdPage = () => {
+    window.open('https://aman.smartcrm.ai/lead/form/fb')
+}
+
 
     return (
         <AdSectionContainer>
@@ -35,8 +39,9 @@ const DesktopAdSection = () => {
             />
           </AdContainer>
           <ButtonContainer>
-                <MoreForAds onClick={navigateToOurWork}> لجميع ورشاتنا ودوراتنا</MoreForAds>
-            </ButtonContainer>
+            <MoreForAds onClick={navigateToAdPage}> سجل معنا الان </MoreForAds>
+            <MoreForAds onClick={navigateToOurWork}> لجميع ورشاتنا ودوراتنا</MoreForAds>
+          </ButtonContainer>
         </AdSectionContainer>
       );
 }

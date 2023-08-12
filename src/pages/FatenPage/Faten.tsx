@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
-import { AboutUsContainer, AboutUsDesc, Container, ContainerProfileImage, Description, ProfileImage, Title } from "./styles";
+import { AboutUsContainer, AboutUsDesc, Container, ContainerProfileImage, Description, ProfileImageFaten, Title, Title2, TitleContainer } from "./styles";
 import { MobileNavBar } from '../../components/NavBar/MobileNavBar';
 import MobileFooter from '../../components/Footer/Footer';
 
@@ -30,16 +30,19 @@ const Sameir=()=>{
             <AboutUsContainer>
                 <AboutUsDesc>
                     <ContainerProfileImage>
-                    <Title>نبذة عن</Title>
-                    <Title>فاتن حاج عيسى ابوربيع</Title>
-                    <ProfileImage/>
-                    </ContainerProfileImage>
-                    <Description>مستشارة بالعلاقات الزوجية والاسرية والجنسية </Description>
-                    <Description>حاصلة على اللقب الاول في التربية المجتمعية </Description>
-                    <Description>موجهة مجموعات ومدربة في تطوير الذات </Description>
-                    <Description>باحثة دكتوراة في العلاقات الاسرية</Description>
-                    <Description>PHD In Family Counseling.</Description>
-                    <Description>Simulation موجهة مجموعات ومرشدة محاكاة </Description>
+                        <TitleContainer>
+                            <Title>فاتن حاج عيسى - ابوربيع</Title>
+                            <Title2> Faten Haj Issa - Abo Rabia</Title2>
+                        </TitleContainer>
+                        <ProfileImageFaten/>
+                        </ContainerProfileImage>
+                        <Description>مستشارة بالعلاقات الزوجية والاسرية والجنسية </Description>
+                        <Description>حاصلة على اللقب الاول في التربية المجتمعية </Description>
+                        <Description>حاصلة على اللقب الثاني في ادارة الاجهزة التربوية</Description>
+                        <Description>موجهة مجموعات ومدربة في تطوير الذات </Description>
+                        <Description>باحثة دكتوراة في العلاقات الاسرية</Description>
+                        <Description>PHD In Family Counseling.</Description>
+                        <Description>Simulation موجهة مجموعات ومرشدة محاكاة </Description>
 
                 </AboutUsDesc>
             </AboutUsContainer>

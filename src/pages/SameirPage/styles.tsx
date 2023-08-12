@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import profileImage from "../../assests/self_improve3.jpeg";
+import profileImage from "../../assests/sameir_pic.jpeg";
 
 
 
@@ -22,9 +22,9 @@ export const Container = styled.div`
     min-height: 95vh;
     justify-content: space-between;
 `
-export const ProfileImage = styled.div`
-    width: 100px;
-    height: 100px;
+export const ProfileImageSameir = styled.div`
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     margin: 20px;
@@ -75,24 +75,46 @@ export const ContainerProfileImage = styled.div`
 
 
 export const Title = styled.h2`
+  width: 100%;
   font-family: ${FontFamily};
   color: ${Colors.primary};
   font-size: 24px;
-  margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 10px;
   @media (max-width: 768px) {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 35px;
+
   }
 `;
+
+export const Title2 = styled.h2`
+width: 100%;
+  font-family: ${FontFamily};
+  color: ${Colors.primary};
+  margin: 0;
+  margin-bottom: 20px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+
+  }
+`;
+
+export const TitleContainer = styled.div`
+display: flex;
+flex-direction: column;
+width: 70%;
+`
 
 export const Description = styled.p`
   font-family: ${FontFamily};
   color: ${Colors.dark};
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 15px;
+  direction: rtl;
   @media (max-width: 768px) {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
+    direction: rtl;
   }
 `;

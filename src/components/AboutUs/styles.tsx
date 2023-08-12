@@ -45,7 +45,7 @@ export const AboutUsContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: fit-content;
-  background-color: #222;
+  background-color: #5E17EB;
   flex-direction: column;
   @media (max-width: 768px) {
       flex-direction: column;
@@ -62,7 +62,7 @@ export const AboutUsDesc = styled.div`
 
 export const Title = styled.h2`
     font-size: 20px;
-  color: #fff;
+  color: #FBD02F;
   margin-bottom: 20px;
   direction: rtl;
   @media (max-width: 768px) {
@@ -72,18 +72,21 @@ export const Title = styled.h2`
 
 export const TitleSmaller = styled.h2`
     font-size: 16px;
-  color: #fff;
+  color: #FBD02F;
   margin-bottom: 20px;
   direction: rtl;
+    font-weight: bold;
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
+        font-weight: bold;  
   }
 `;
 
 export const Description = styled.p`
   font-size: 19px;
-  color: #fff;
+  color: #FBD02F;
   line-height: 1.5;
+  font-weight: bold;
   @media (max-width: 768px) {
     font-size: 19px;
   }
@@ -91,8 +94,9 @@ export const Description = styled.p`
 `;
 export const Description2 = styled.p`
   font-size: 19px;
-  color: #fff;
+  color: #FBD02F;
   line-height: 1.5;
+      font-weight: bold;
   @media (max-width: 768px) {
     font-size: 19px;
   }
@@ -100,8 +104,8 @@ export const Description2 = styled.p`
 `;
 
 export const MoreButton = styled.button`
-  background-color: #4F46E5; // Replace with your desired button color
-  color: #fff;
+  background-color: #000000; // Replace with your desired button color
+  color: #FBD02F;
   border: none;
   font-size: 14px;
   padding: 8px 16px;
@@ -121,8 +125,8 @@ export const MoreButton = styled.button`
 `;
 
 export const MoreAboutButton = styled.button`
-  background-color: #4F46E5; // Replace with your desired button color
-  color: #fff;
+  background-color: #000000; // Replace with your desired button color
+  color: #FBD02F;
   border: none;
   font-size: 15px;
   padding: 8px 16px;

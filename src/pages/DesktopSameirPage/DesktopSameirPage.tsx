@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
-import { AboutUsContainer, AboutUsDesc, Container, ContainerProfileImage, Description, ProfileImage, Title } from "./styles";
+import { AboutUsContainer, AboutUsDesc, Container, ContainerProfileImage, Description, ProfileImageSameir, Title, Title2, TitleContainer } from "./styles";
 import DesktopNavBar from '../../components/Desktop/DesktopNavBar/DesktopNavBar';
 import DesktopFooter from '../../components/Desktop/DesktopFooter/Footer';
 
@@ -29,18 +29,20 @@ const Sameir=()=>{
             <DesktopNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices}/>
             <AboutUsContainer>
                 <AboutUsDesc>
-                    <ContainerProfileImage>
-                    <Title>نبذة عن</Title>
-                    <Title>سمير ابوربيع</Title>
-                    <ProfileImage/>
+                <ContainerProfileImage>
+                        <TitleContainer>
+                            <Title>سمير ابوربيع</Title>
+                            <Title2> Sameir Abo Rabia</Title2>
+                        </TitleContainer>
+                    <ProfileImageSameir/>
                     </ContainerProfileImage>
-                    <Description>خبرة طويلة في مجال التربية والارشاد والتدريب</Description>
-                    <Description>مستشار في العلاقات الزوجية والاسرية والجنسية،</Description>
+                    <Description>مستشار في العلاقات الزوجية والاسرية والجنسية</Description>
+                    <Description>استشارات زوجية وأسرية وإرشادات تربوية خاصة للآباء والأمهات باساليب <br/> التربية الوالدية الحديثة وطرق التعامل مع الأبناء بحسب طريقة S.F.E</Description>
                     <Description>حاصل على اللقب الاول في التربية اللا منهجية واللقب الثاني في الادارة التربوية</Description>
                     <Description>باحث دكتوراة في التنمية البشرية والارشاد الاسري </Description>
-                    <Description>PHD In Human Development And Family Counseling.</Description>
+                    <Description>PHD In Human Development And Family Counseling</Description>
                     <Description>Simulation موجه مجموعات ومرشد محاكاة </Description>
-
+                    <Description>خبرة طويلة في مجال التربية والارشاد والتدريب</Description>
                 </AboutUsDesc>
             </AboutUsContainer>
             

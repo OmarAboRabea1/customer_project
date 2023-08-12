@@ -45,3 +45,59 @@ export const Description = styled.p`
   line-height: 1.8;
   margin-bottom: 30px;  // Increased margin-bottom for desktop
 `;
+
+export const Title2 = styled.h2`
+  font-family: ${FontFamily};
+  color: ${Colors.primary};
+  font-size: 24px;
+  margin-bottom: 20px;
+  direction: rtl;
+  @media (max-width: 768px) {
+    font-size: 30px;
+    margin-bottom: 20px;
+    direction: rtl;
+  }
+`;
+
+export const Names = styled.p`
+  font-family: ${FontFamily};
+  color: ${Colors.dark};
+  line-height: 1.8;
+  font-size: 24px;
+  margin: 0;
+  direction: rtl;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin: 0;
+    direction: rtl;
+  }
+`;
+
+
+export const PicturesContainer = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+`
+
+
+export const SameirContainer = styled.div`
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
+
+export const FatenContainer = styled.div`
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+`

@@ -36,6 +36,11 @@ const MobileAdSection = () => {
     const navigateToOurWork = () => {
         navigate('/ourWork');
     }
+
+    const navigateToAdPage = () => {
+        window.open('https://aman.smartcrm.ai/lead/form/fb')
+    }
+    
     
 
     return (
@@ -45,6 +50,7 @@ const MobileAdSection = () => {
                 {ads.map((ad, index) => (
                     <AdImage key={index} src={ad.imageUrl} alt="ad" onClick={() => openModal(ad)} />
                 ))}
+
             </AdContainer>
             <Modal
                 isOpen={modalIsOpen}
@@ -71,6 +77,7 @@ const MobileAdSection = () => {
                 {selectedAd && <AdImageOut src={selectedAd.imageUrl} onClick={handleAdClick} style={{ cursor: 'pointer' }}/>}
             </Modal>
             <ButtonContainer>
+                <MoreForAds onClick={navigateToAdPage}> سجل معنا الان </MoreForAds>
                 <MoreForAds onClick={navigateToOurWork}> لجميع ورشاتنا ودوراتنا</MoreForAds>
             </ButtonContainer>
         </AdSectionContainer>

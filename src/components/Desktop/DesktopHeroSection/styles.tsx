@@ -162,23 +162,42 @@ export const HeroSection = styled.div`
 `
 
 export const Title = styled.h1`
-  font-size: 3.5em;
-  text-align: center;
-  font-family: 'Arial', sans-serif; // add a font of your choice here
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, .5); // adds a shadow to the text
-
-  /* Adding a bright gradient color to the title text */
-  background: -webkit-linear-gradient(45deg, #FF8C00, #FFFF00);
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .5); 
+  background: -webkit-linear-gradient(45deg, #f6d47e, #f9f904);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5em;  
+  direction: rtl;
 `;
 
 export const Acronym = styled.span`
-  color: #00FFFF;  // use a contrasting color to make it stand out
-  font-size: 0.6em; // slightly larger font size
-  margin-left: 5px; // little space from the main title
-`;
+  font-size: 1.2em;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .5); 
+  background: -webkit-linear-gradient(45deg, #f6d47e, #f9f904);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3.5em;
 
+`;
+export const Subtitle = styled.h2`
+  font-size: 1.6em;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .5); 
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  background: -webkit-linear-gradient(45deg, #f6d47e, #f9f904);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3em;
+
+`;
 const glowingShadow = keyframes`
   0% {
     text-shadow: 0 0 5px #FFFF00, 0 0 10px #FFFF00, 0 0 15px #FFD700, 0 0 20px #FFD700, 0 0 25px #FFD700, 0 0 30px #FFD700;
@@ -188,35 +207,24 @@ const glowingShadow = keyframes`
   }
 `;
 
-export const Subtitle = styled.h2`
-  font-size: 2em;
-  background: -webkit-linear-gradient(45deg, #FF8C00, #FFFF00);
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); // Shadow to make it pop out
-  text-align: center;
-  font-weight: bold; // Make the font weight heavier
 
-  /* Adding a bright gradient color to the title text */
-  background: -webkit-linear-gradient(45deg, #f39625, #f4f437);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-`;
 
 export const Button = styled.button`
-  padding: 1em 2em;
-  font-size: 1em;
-  color: #0b0a0a;
-  background: -webkit-linear-gradient(45deg, #f4efe8, #f6f6de); // Apply the linear gradient as the background
-  border: 2px solid #f39625; // Apply the orange color from the gradient to the border
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  color: #2b00ff;
+  font-weight: bold;
+  background: -webkit-linear-gradient(5deg, #f6d47e, #f9f904);
+  border: 2px solid white;
+  border: 0px solid #000000; 
+  border-radius: 3px;
   cursor: pointer;
-  transition: all 0.5s ease; // Add a transition for smoother color change
-
   &:hover {
-    color: #f39625;
-    background: #ffffff; // Change to white background color
-    border: 2px solid #f39625; // Keep the border color as the orange from the gradient
+    color: #030303;
+    background: #f6d47e; 
+    border: 2px solid #f9f904; 
   }
-`
-
+`;
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -248,3 +256,27 @@ export const WhatsappIcon = styled(SocialIcon)`
 export const InstagramIcon = styled(SocialIcon)`
   background-image: url(${instagramIcon});
 `
+export const Title1 = styled.h1`
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .5); 
+  background: -webkit-linear-gradient(45deg, #f6d47e, #f9f904);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
+
+export const Acronym_small = styled.span`
+  font-size: 1em;
+  color: #00FFFF;  
+font-size: 0.6em;
+margin-left: 5px;
+`;
+
+export const Title_desc_box = styled.div`
+width: fit-content;
+align-items: center;
+text-align: center;
+
+`;

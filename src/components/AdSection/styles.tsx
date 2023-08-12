@@ -63,7 +63,6 @@ export const CardButton = styled.button`
     position: relative;
     overflow: hidden;
     transition: color 0.4s ease-in-out;
-    z-index: 1;
 
     &:before {
         content: "";
@@ -80,7 +79,7 @@ export const CardButton = styled.button`
     }
 
     &:hover {
-        color: white;
+        color: #ff0000;
         transition: color 0.1s ease-in-out;
         &:before {
             width: 100%;
@@ -114,7 +113,6 @@ export const MoreForAds = styled.button`
     position: relative;
     overflow: hidden;
     transition: color 0.4s ease-in-out;
-    z-index: 1;
 
     &:before {
         content: "";
@@ -131,7 +129,7 @@ export const MoreForAds = styled.button`
     }
 
     &:hover {
-        color: white;
+        color: #050505;
         transition: color 0.1s ease-in-out;
         &:before {
             width: 100%;
@@ -145,6 +143,7 @@ export const ButtonContainer = styled.div`
   width: 100%;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding-top: 10px;
   padding-bottom: 15px;
 

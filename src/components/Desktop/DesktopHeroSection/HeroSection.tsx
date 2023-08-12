@@ -1,4 +1,4 @@
-import { Search_Container, HeroSection, Title, Subtitle, Button, ButtonContainer, IconContainer, FacebookIcon, WhatsappIcon, InstagramIcon, Acronym } from "./styles"
+import { Search_Container, HeroSection, Title, Subtitle, Button, ButtonContainer, IconContainer, FacebookIcon, WhatsappIcon, InstagramIcon, Acronym, Title1, Acronym_small, Title_desc_box } from "./styles"
 import { useNavigate } from "react-router-dom";
 
 
@@ -17,9 +17,12 @@ const NavigateToServices = () => {
     return(
             <Search_Container>
                 <HeroSection>
-                    <Title>Aman Center<Acronym>- SFE</Acronym> </Title>
-                    <Title>مركز الامان</Title>
-                    <Subtitle>للاستشارات الزوجية, الاسرية وتطوير الذات</Subtitle>
+                <Title1>Aman Center <Acronym_small>S.F.E</Acronym_small></Title1>
+                <Acronym>Social Family Education</Acronym>
+                <Title_desc_box>
+                <Title>مركز الامان</Title>
+                <Subtitle>للاستشارات الزوجية والاسرية وتطوير الذات</Subtitle>
+                </Title_desc_box>
                     <ButtonContainer>
                         <Button onClick={NavigateToOurWork}> اعمالنا </Button>
                         <Button onClick={NavigateToServices}>احجز استشارتك</Button>

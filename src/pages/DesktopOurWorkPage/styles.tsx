@@ -26,10 +26,11 @@ export const Container = styled.div`
 export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 100px;
     flex-wrap: nowrap;
     width: 100%;
     direction: rtl;
+    padding-bottom: 50px;
     
 `;
 

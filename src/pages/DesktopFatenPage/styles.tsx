@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import profileImage from "../../assests/self_improve3.jpeg";
+import profileImage from "../../assests/faten_pic.jpeg";
 
 // Add this at the top of your styles.tsx file
 const Colors = {
@@ -18,7 +18,7 @@ export const Container = styled.div`
     flex-direction: column;
     margin-top: 50px;
 `
-export const ProfileImage = styled.div`
+export const ProfileImageFaten = styled.div`
     width: 100px;
     height: 150px;
     border-radius: 50%;
@@ -89,5 +89,22 @@ export const Description = styled.p`
   @media (max-width: 768px) {
     font-size: 18px;
     margin-bottom: 15px;
+  }
+`;
+export const TitleContainer = styled.div`
+display: flex;
+flex-direction: column;
+width: 70%;
+`
+
+export const Title2 = styled.h2`
+width: 100%;
+  font-family: ${FontFamily};
+  color: ${Colors.primary};
+  margin: 0;
+  margin-bottom: 20px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+
   }
 `;

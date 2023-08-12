@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import profileImage from "../../assests/self_improve3.jpeg";
+import profileImage from "../../assests/faten_pic.jpeg";
 
 
 
@@ -22,9 +22,9 @@ export const Container = styled.div`
     min-height: 100vh;
     justify-content: space-between;
 `
-export const ProfileImage = styled.div`
-    width: 100px;
-    height: 100px;
+export const ProfileImageFaten = styled.div`
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     margin: 20px;
@@ -94,5 +94,22 @@ export const Description = styled.p`
   @media (max-width: 768px) {
     font-size: 18px;
     margin-bottom: 15px;
+  }
+`;
+export const TitleContainer = styled.div`
+display: flex;
+flex-direction: column;
+width: 70%;
+`
+
+export const Title2 = styled.h2`
+width: 100%;
+  font-family: ${FontFamily};
+  color: ${Colors.primary};
+  margin: 0;
+  margin-bottom: 20px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+
   }
 `;
