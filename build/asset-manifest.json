@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba7feeda.css",
-    "main.js": "/static/js/main.d664c86b.js",
-    "static/js/787.4695255d.chunk.js": "/static/js/787.4695255d.chunk.js",
+    "main.css": "/static/css/main.7f828492.css",
+    "main.js": "/static/js/main.0eb45401.js",
+    "static/js/27.9adf048c.chunk.js": "/static/js/27.9adf048c.chunk.js",
     "static/media/Family_counseling.jpeg": "/static/media/Family_counseling.5abe35c3828b763a28a1.jpeg",
     "static/media/find_your_self.jpeg": "/static/media/find_your_self.86b66f5830a25665ff4a.jpeg",
     "static/media/family_counseling2.jpeg": "/static/media/family_counseling2.cd8215e11913278ec5a5.jpeg",
@@ -42,13 +42,10 @@
     "index.html": "/index.html",
     "static/media/LinkedInIcon.svg": "/static/media/LinkedInIcon.ada11cda991129bc91b79d2c7cee1066.svg",
     "static/media/cart_img.svg": "/static/media/cart_img.0383ca9f7882be5cd547c84862be8eaf.svg",
-    "static/media/FacebookIcon.svg": "/static/media/FacebookIcon.5e1cb4b86ac3f872dadcbde3ed31cd4b.svg",
-    "main.ba7feeda.css.map": "/static/css/main.ba7feeda.css.map",
-    "main.d664c86b.js.map": "/static/js/main.d664c86b.js.map",
-    "787.4695255d.chunk.js.map": "/static/js/787.4695255d.chunk.js.map"
+    "static/media/FacebookIcon.svg": "/static/media/FacebookIcon.5e1cb4b86ac3f872dadcbde3ed31cd4b.svg"
   },
   "entrypoints": [
-    "static/css/main.ba7feeda.css",
-    "static/js/main.d664c86b.js"
+    "static/css/main.7f828492.css",
+    "static/js/main.0eb45401.js"
   ]
 }

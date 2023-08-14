@@ -16,27 +16,12 @@ import AboutUsPage from "../pages/AboutUsPage/AboutUsPage";
 import DesktopAboutUsPage from "../pages/DesktopAboutUsPage/DesktopAboutUsPage";
 import DesktopServicesPage from "../pages/DesktopServicesPage/DesktopServicesPage";
 import ServicesPage from "../pages/ServicesPage/ServicesPage";
-import { ScrollContext, useScroll } from "../Helpers/ScrollContext";
 import OurWorkPage from "../pages/OurWorkPage/OurWorkPage";
 import DesktopOurWorkPage from "../pages/DesktopOurWorkPage/DesktopOurWorkPage";
 
-
-
-const ScrollManager = () => {
-    const location = useLocation();
-    const { saveScroll, restoreScroll } = useScroll();
-  
-    useEffect(() => {
-      restoreScroll();
-      return () => saveScroll();
-    }, [location, restoreScroll, saveScroll]);
-  
-    return null; // this component doesn't render anything, it just manages scroll
-  };
   
   const Routing = () => {
     const [windowSize, setWindowSize] = useState<Number>();
-    const { scrollPosition, saveScroll, restoreScroll } = useScroll();
   
     var size = SetWindowSize();
   
@@ -49,9 +34,7 @@ const ScrollManager = () => {
     }
   
     return (
-      <ScrollContext.Provider value={{ scrollPosition, saveScroll, restoreScroll }}>
         <BrowserRouter>
-          <ScrollManager /> {/* add this line */}
           <Routes>
             <Route path="/" >
               <Route index element={<HomePage />} />
@@ -83,7 +66,6 @@ const ScrollManager = () => {
             </Route>
           </Routes>
         </BrowserRouter>
-      </ScrollContext.Provider>
     )
   }
   export default Routing;
