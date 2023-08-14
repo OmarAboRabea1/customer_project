@@ -1,5 +1,6 @@
 import { CardButton, CardContainer, CardDescription, CardImage, CardTitle, Card_container2, CardsContainer, ResChef, ResName, RestaurantCard, RestaurantCard_desc, RestaurantCard_img } from "./styles"
 import service1Image from "../../../assests/Claro_Res.svg"
+import { useNavigate } from "react-router-dom";
 
 interface CardProps {
     imgUrl: string;
@@ -9,9 +10,16 @@ interface CardProps {
 }
 
 export const ServiceCard: React.FC<CardProps> = ({imgUrl, title, description, buttonUrl}) => {
+
+    const navigate = useNavigate();
+
     const handleButtonClick = () => {
-        window.location.href = buttonUrl;
+        navigate(buttonUrl);
+        window.scrollTo(0, 0);
+
     };    
+    const navigateToFaten = () => {
+    }
     return (
         <CardContainer>
             <CardImage imgUrl={imgUrl} />

@@ -5,15 +5,19 @@ import family_counsel from "../../../assests/family_counseling9.jpeg"
 import couple_counsel from "../../../assests/counsel1.jpeg"
 import { ServiceCard } from './ServiceCard';
 import { useNavigate } from "react-router-dom";
+import useScrollPosition from '../../../Helpers/ScrollToPosition';
 
 
 
 
 export const DesktopOurServices = forwardRef<HTMLDivElement, {}>((props, ref) => {
+  useScrollPosition("Home")
+
 
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
+    window.scrollTo(0, 0);
     navigate('/services');
   };
 

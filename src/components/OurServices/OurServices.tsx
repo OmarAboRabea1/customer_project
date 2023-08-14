@@ -8,14 +8,18 @@ import { useNavigate } from "react-router-dom";
 
 
 import { ServiceCard } from './ServiceCard';
+import useScrollPosition from '../../Helpers/ScrollToPosition';
 
 
 export const MobileOurServices = forwardRef<HTMLDivElement, {}>((props, ref) => {
+  useScrollPosition("Home")
+
 
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
     navigate('/services');
+    window.scrollTo(0, 0);
   };
 
     return(

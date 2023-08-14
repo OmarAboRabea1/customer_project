@@ -16,8 +16,9 @@ const DesktopAdSection = () => {
 
     const navigateToOurWork = () => {
       navigate('/ourWork');
+      window.scrollTo(0, 0);
   }
-  
+
   const navigateToAdPage = () => {
     window.open('https://aman.smartcrm.ai/lead/form/fb')
 }

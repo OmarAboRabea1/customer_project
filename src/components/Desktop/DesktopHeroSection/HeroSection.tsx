@@ -9,9 +9,11 @@ export const DesktopHeroSection = ({scrollToOurServices}: {scrollToOurServices: 
 
   const NavigateToOurWork = () => {
     navigate('/ourWork');
+    window.scrollTo(0, 0);
 }
 const NavigateToServices = () => {
     navigate('/services');
+    window.scrollTo(0, 0);
   }
 
     return(

@@ -35,6 +35,7 @@ const MobileAdSection = () => {
 
     const navigateToOurWork = () => {
         navigate('/ourWork');
+        window.scrollTo(0, 0);
     }
 
     const navigateToAdPage = () => {
