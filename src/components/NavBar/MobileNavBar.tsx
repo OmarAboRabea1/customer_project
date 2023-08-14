@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import MobileHamburger from "./MobileHamburger";
 import { Box_img, Logo_img, Nav_Container } from './styles';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 interface MobileNavBarProps {
   scrollToFooter: () => void;
@@ -14,6 +14,19 @@ export const MobileNavBar: React.FC<MobileNavBarProps> = ({
   scrollToAboutUs,
   scrollToOurServices,
 }) => {
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const scrollTo = params.get('scrollTo');
+  
+    if (scrollTo === 'aboutUs') {
+      setTimeout(() => {
+        scrollToAboutUs();
+      }, 1000);
+    }
+  }, [scrollToAboutUs]);
+
+  const location = useLocation();
 
   const NavigateToWhatsApp = () => {
     window.open("https://wa.me/+972547100240");
@@ -30,6 +43,13 @@ const NavigateToOurWork = () => {
   window.scrollTo(0, 0);
 }
 
+const FuncScrollToAboutUs = () => {
+  if (window.location.pathname === '/') {
+    scrollToAboutUs();
+  } else {
+    navigate('/?scrollTo=aboutUs');
+  }
+};
 
   
     return(
@@ -39,10 +59,11 @@ const NavigateToOurWork = () => {
         </Box_img>
         <MobileHamburger 
           scrollToFooter={NavigateToWhatsApp}
-          scrollToAboutUs={scrollToAboutUs}
+          scrollToAboutUs={FuncScrollToAboutUs}
           scrollToOurServices={NavigateToServices}
           scrollToOurWork={NavigateToOurWork}
         />
+        <>{console.log(scrollToAboutUs)}</>
       </Nav_Container>
     )
 }
