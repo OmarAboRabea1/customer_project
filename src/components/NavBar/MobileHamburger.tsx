@@ -20,10 +20,8 @@ const MobileHamburger: React.FC<MobileHamburgerProps> = ({
 
   const handleClickOutside = (e: MouseEvent) => {
     if (node.current!.contains(e.target as Node)) {
-      // inside click
       return;
     }
-    // outside click
     setOpen(false);
   };
 

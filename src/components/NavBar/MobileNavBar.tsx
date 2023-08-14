@@ -22,10 +22,12 @@ export const MobileNavBar: React.FC<MobileNavBarProps> = ({
 
 const NavigateToServices = () => {
   navigate('/services');
+  window.scrollTo(0, 0);
 }
 
 const NavigateToOurWork = () => {
   navigate('/ourWork');
+  window.scrollTo(0, 0);
 }
 
 
