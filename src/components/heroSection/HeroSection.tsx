@@ -51,7 +51,7 @@ const NavigateToServices = () => {
         </ButtonContainer>
         <IconContainer>
           <FacebookIcon href="https://www.facebook.com" />
-          <WhatsappIcon href="wa.me/+972547100240" />
+          <WhatsappIcon href="https://wa.me/+972547100480" />
           <InstagramIcon href="https://www.instagram.com/faten_haj_issa/" />
         </IconContainer>
       </HeroSection>

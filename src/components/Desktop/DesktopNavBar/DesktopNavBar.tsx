@@ -5,7 +5,7 @@ import { useEffect } from "react";
 const DesktopNavBar = ({scrollToAboutUs, scrollToFooter, scrollToOurServices}: {scrollToAboutUs: () => void, scrollToFooter: () => void, scrollToOurServices: () => void}) => {
 
     const NavigateToWhatsApp = () => {
-      window.open("https://wa.me/+972547100240");
+      window.open("https://wa.me/+972547100480");
   }
 
   let navigate = useNavigate();

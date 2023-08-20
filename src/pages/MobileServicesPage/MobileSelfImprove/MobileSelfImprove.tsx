@@ -34,7 +34,7 @@ const MobileSelfImprove=()=>{
                     <Subtitle>تطوير الذات</Subtitle>
                     <IconContainer>
                         <FacebookIcon href="https://www.facebook.com/afaq.edu"/>
-                        <WhatsappIcon href="https://wa.me/+972547100240"/>
+                        <WhatsappIcon href="https://wa.me/+972547100480"/>
                         <InstagramIcon href="https://www.instagram.com/aman_academy_sfe/"/>
                     </IconContainer>
                 </HeroSection>

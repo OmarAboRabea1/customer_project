@@ -29,7 +29,7 @@ export const MobileNavBar: React.FC<MobileNavBarProps> = ({
   const location = useLocation();
 
   const NavigateToWhatsApp = () => {
-    window.open("https://wa.me/+972547100240");
+    window.open("https://wa.me/+972547100480");
 }
   let navigate = useNavigate();
 

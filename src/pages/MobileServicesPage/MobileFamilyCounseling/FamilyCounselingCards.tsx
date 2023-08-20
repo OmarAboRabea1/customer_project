@@ -8,7 +8,7 @@ interface CardProps {
 }
 
 const handleButtonClick = () => {
-    window.location.href = "https://wa.me/+972547100240";
+    window.location.href = "https://wa.me/+972547100480";
 };
 
 export const FamilyCounselingCards = () => (
@@ -28,7 +28,7 @@ export const FamilyCounselingCards = () => (
             <CardButton onClick={handleButtonClick}>
                 <Button_text>للحجز</Button_text>
             <IconContainer>
-                <WhatsappIcon href="https://wa.me/+972547100240"/>
+                <WhatsappIcon href="https://wa.me/+972547100480"/>
             </IconContainer>
             </CardButton>
         </ButtonContainer>
@@ -48,7 +48,7 @@ export const FamilyCounselingCards = () => (
             <CardButton onClick={handleButtonClick}>
                 <Button_text>للحجز</Button_text>
             <IconContainer>
-                <WhatsappIcon href="https://wa.me/+972547100240"/>
+                <WhatsappIcon href="https://wa.me/+972547100480"/>
             </IconContainer>
             </CardButton>
         </ButtonContainer>
