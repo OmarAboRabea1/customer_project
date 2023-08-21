@@ -39,6 +39,9 @@ export const ArticlesContainer = styled.div`
   height: fit-content;
   background-color: ${Colors.light};
   flex-direction: column;
+  flex-direction: column;
+  direction: rtl;
+  min-height: 720px;
   padding: 25px;
   @media (max-width: 768px) {
       flex-direction: column;
