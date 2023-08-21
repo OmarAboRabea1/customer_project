@@ -28,12 +28,16 @@ const DesktopNavBar = ({scrollToAboutUs, scrollToFooter, scrollToOurServices}: {
       navigate('/?scrollTo=aboutUs');
     }
   };
+  const NavigateToArticles = () => {
+    navigate("/articles");
+}
   
     return(
         <Nav_Container>
             <StyledNavBar>
                 <Left_Container>
                     <ButtonContainer>
+                        <Button onClick={NavigateToArticles}>مقالاتنا</Button>
                         <Button onClick={NavigateToWhatsApp}>تواصل معنا</Button>
                         <Button onClick={FuncScrollToAboutUs}>من نحن</Button>
                         <Button onClick={scrollToOurServices}>خدماتنا</Button>

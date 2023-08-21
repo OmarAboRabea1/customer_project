@@ -5,6 +5,7 @@ import spicy from "../assests/spicy.svg"
 import vegan from "../assests/vegan.svg";
 import vegetarian from "../assests/vegetarian.svg";
 import { PrepareSearchData } from "../Helpers/PrepareSearchData";
+import { ArticleType } from './Types';
 
 export interface SearchNames{
     name: string;
@@ -106,3 +107,36 @@ export const Colors = {
 export var search_names: string[]= []
 
 search_names = PrepareSearchData(AllRestaurants, AllDishes, AllChefs)
+
+export const articles: ArticleType[] = [
+  {
+    id: 1,
+    title: "كيفية التعامل مع الابناء دون سن ال 10",
+    content: "Lorem ipsum..."
+  },
+  {
+    id: 2,
+    title: "كيفية التعامل مع الابناء دون سن ال البلوغ",
+    content: "Lorem ipsum..."
+  },
+  {
+    id: 3,
+    title: "كيفية التعامل مع الابناء بعد سن البلوغ",
+    content: "Lorem ipsum..."
+  },
+  {
+    id: 4,
+    title: "التغلب على الاكتئاب ",
+    content: "Lorem ipsum..."
+  },
+  {
+    id: 5,
+    title: "تنظيم الوقت",
+    content: "Lorem ipsum..."
+  },
+  {
+    id: 6,
+    title: "كيف اتعامل مع والدي عند الشيخوخة",
+    content: "Lorem ipsum..."
+  },
+];

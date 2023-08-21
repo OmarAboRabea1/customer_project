@@ -28,3 +28,8 @@ export interface Chef{
     img:string;
 }
 
+export type ArticleType = {
+    id: number;
+    title: string;
+    content: string;
+  };

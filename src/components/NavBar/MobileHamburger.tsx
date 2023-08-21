@@ -6,6 +6,7 @@ interface MobileHamburgerProps {
   scrollToAboutUs: () => void;
   scrollToOurServices: () => void;
   scrollToOurWork: () => void;
+  scrollToArticles: () => void;
 
 }
 
@@ -14,6 +15,7 @@ const MobileHamburger: React.FC<MobileHamburgerProps> = ({
   scrollToAboutUs,
   scrollToOurServices,
   scrollToOurWork,
+  scrollToArticles,
 }) => {
   const [open, setOpen] = useState(false);
   const node = useRef<HTMLDivElement>(null);
@@ -62,6 +64,13 @@ const MobileHamburger: React.FC<MobileHamburgerProps> = ({
     scrollToOurWork()
   };
 
+  const handleClickArticles= (e: any) => {
+    if (e.target.nodeName === 'BUTTON') {
+      setOpen(!open);
+    }
+    scrollToArticles()
+  };
+
   return (
     <MobileMenu ref={node}>
       <Hamburger open={open} onClick={() => setOpen(!open)}>
@@ -74,6 +83,7 @@ const MobileHamburger: React.FC<MobileHamburgerProps> = ({
         <button onClick={handleClickAboutUs}>من نحن</button>
         <button onClick={handleClickOurServices}>خدماتنا</button>
         <button onClick={handleClickOurWork}>اعمالنا وورشاتنا</button>
+        <button onClick={handleClickArticles}>مقالاتنا </button>
 
       </Nav>
     </MobileMenu>

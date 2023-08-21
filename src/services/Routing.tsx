@@ -18,6 +18,10 @@ import DesktopServicesPage from "../pages/DesktopServicesPage/DesktopServicesPag
 import ServicesPage from "../pages/ServicesPage/ServicesPage";
 import OurWorkPage from "../pages/OurWorkPage/OurWorkPage";
 import DesktopOurWorkPage from "../pages/DesktopOurWorkPage/DesktopOurWorkPage";
+import ArticlesPage from "../pages/ArticlesPage/ArticlesPage";
+import DesktopArticlesPage from "../pages/DesktopArticlesPage/DesktopArticlesPage";
+import ArticleDetailPage from "../pages/ArticlesPage/ArticleDetailPage";
+import DesktopArticleDetailPage from "../pages/DesktopArticlesPage/DesktopArticleDetailPage";
 
   
   const Routing = () => {
@@ -48,6 +52,9 @@ import DesktopOurWorkPage from "../pages/DesktopOurWorkPage/DesktopOurWorkPage";
                   <Route path="services/self_improve" element={<MobileSelfImprove />} />
                   <Route path="services/couples_counseling" element={<MobileCouplesCounseling />} />
                   <Route path="ourWork" element={<OurWorkPage />} />
+                  <Route path="articles" element={<ArticlesPage />} />
+                  <Route path="/articles/:id" element={<ArticleDetailPage />} />
+
                 </>
               }
               {Number(windowSize!) >= 1024 &&
@@ -60,7 +67,8 @@ import DesktopOurWorkPage from "../pages/DesktopOurWorkPage/DesktopOurWorkPage";
                   <Route path="services/self_improve" element={<DesktopSelfImprove />} />
                   <Route path="services/couples_counseling" element={<DesktopCouplesCounseling />} />
                   <Route path="ourWork" element={<DesktopOurWorkPage />} />
-
+                  <Route path="articles" element={<DesktopArticlesPage />} />
+                  <Route path="/articles/:id" element={<DesktopArticleDetailPage />} />
                 </>
               }
             </Route>

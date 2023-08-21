@@ -29,7 +29,7 @@ export const StyledNavBar = styled.div `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 100%;
 
 `
@@ -40,7 +40,7 @@ export const Left_Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 100%;`;
 
 export const Button = styled.a`

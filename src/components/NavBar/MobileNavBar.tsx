@@ -13,6 +13,7 @@ export const MobileNavBar: React.FC<MobileNavBarProps> = ({
   scrollToFooter,
   scrollToAboutUs,
   scrollToOurServices,
+  
 }) => {
 
   useEffect(() => {
@@ -43,6 +44,11 @@ const NavigateToOurWork = () => {
   window.scrollTo(0, 0);
 }
 
+const NavigateToArticles = () => {
+  navigate('/articles');
+  window.scrollTo(0, 0);
+}
+
 const FuncScrollToAboutUs = () => {
   if (window.location.pathname === '/') {
     scrollToAboutUs();
@@ -62,6 +68,7 @@ const FuncScrollToAboutUs = () => {
           scrollToAboutUs={FuncScrollToAboutUs}
           scrollToOurServices={NavigateToServices}
           scrollToOurWork={NavigateToOurWork}
+          scrollToArticles={NavigateToArticles}
         />
         <>{console.log(scrollToAboutUs)}</>
       </Nav_Container>
