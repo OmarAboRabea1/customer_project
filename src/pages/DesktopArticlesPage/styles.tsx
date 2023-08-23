@@ -15,6 +15,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+
 `
 export const ArticlesContainer = styled.div`
   display: flex;
@@ -23,33 +24,29 @@ export const ArticlesContainer = styled.div`
   height: fit-content;
   flex-direction: column;
   direction: rtl;
-  min-height: 720px;
+  min-height: 1080px;
   margin: 25px;
   gap: 10px;
-  @media (max-width: 768px) {
-      flex-direction: column;
-      margin: 25px;
-  }
 `;
 
 export const ArticlesDesc = styled.div`
   text-align: center;
-  padding: 60px;  // Increased padding for desktop
+  padding: 60px;  
 `;
 
 export const Title = styled.h2`
   font-family: ${FontFamily};
-  font-size: 36px;  // Increased font size for desktop
+  font-size: 30px; 
   color: ${Colors.primary};
   margin-bottom: 30px;
 `;
 
 export const Description = styled.p`
   font-family: ${FontFamily};
-  font-size: 24px;  // Increased font size for desktop
+  font-size: 18px;  
   color: ${Colors.dark};
   line-height: 1.8;
-  margin-bottom: 30px;  // Increased margin-bottom for desktop
+  margin-bottom: 30px; 
 `;
 
 export const Title2 = styled.h2`
@@ -161,12 +158,20 @@ export const Content_container = styled.div`
   padding-top: 50px;
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 80%;
   margin: 50px;
   height: 100%;
-  text-align: start;
+  align-items: flex-start;
   direction: rtl;
+    margin-bottom: 500px; 
   @media (max-width: 450px) {
     width: 80%;
   }
+`;
+
+export const Container_for_content = styled.div`
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+  direction: rtl;
 `;
