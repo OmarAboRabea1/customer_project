@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7f828492.css",
-    "main.js": "/static/js/main.3dc613e0.js",
+    "main.js": "/static/js/main.61b682b1.js",
     "static/js/27.9adf048c.chunk.js": "/static/js/27.9adf048c.chunk.js",
     "static/media/Claro_Res.svg": "/static/media/Claro_Res.6093e0fa01a69ad69e54386ec22679d0.svg",
     "static/media/Family_counseling.jpeg": "/static/media/Family_counseling.5abe35c3828b763a28a1.jpeg",
@@ -48,6 +48,6 @@
   },
   "entrypoints": [
     "static/css/main.7f828492.css",
-    "static/js/main.3dc613e0.js"
+    "static/js/main.61b682b1.js"
   ]
 }

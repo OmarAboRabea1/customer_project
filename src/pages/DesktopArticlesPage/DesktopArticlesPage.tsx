@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
-import { ArticleLink, ArticlesContainer, ArticlesDesc, Column, ColumnHeading, Container, Description, FatenContainer, Names, PicturesContainer, SameirContainer, Title, Title2 } from "./styles";
+import { ArrowButton, ArticleLink, ArticlesContainer, ArticlesDesc, Column, ColumnHeading, Columns_container, Container, Description, FatenContainer, Names, PicturesContainer, SameirContainer, Title, Title2, TitlesList } from "./styles";
 import DesktopNavBar from '../../components/Desktop/DesktopNavBar/DesktopNavBar';
 import DesktopFooter from '../../components/Desktop/DesktopFooter/Footer';
 import { Link } from 'react-router-dom';
@@ -29,35 +29,50 @@ const DesktopArticlesPage = () => {   // Updated the component name
         <Container>
             <DesktopNavBar scrollToAboutUs={scrollToAboutUs} scrollToFooter={scrollToFooter} scrollToOurServices={scrollToOurServices} />
             <ArticlesContainer>
-            <Column>
-                <ColumnHeading>الوالدية</ColumnHeading>
-                {articles.slice(0, 3).map(article => (
-                    <ArticleLink key={article.id} as={Link} to={`/articles/${article.id}`}>
-                        {article.title}
-                    </ArticleLink>
-                ))}
-            </Column>
-
-            <Column>
-                <ColumnHeading>النجاح</ColumnHeading>
-                {articles.slice(3, 5).map(article => (
-                    <ArticleLink key={article.id} as={Link} to={`/articles/${article.id}`}>
-                        {article.title}
-                    </ArticleLink>
-                ))}
-            </Column>
-
-            <Column>
-                <ColumnHeading>بر الوالدين</ColumnHeading>
-                {articles.slice(5, 10).map(article => (
-                    <ArticleLink key={article.id} as={Link} to={`/articles/${article.id}`}>
-                        {article.title}
-                    </ArticleLink>
-                ))}
-            </Column>
+                <CollapsibleComponent title="انا وطفلي" articles={articles.slice(0, 2)} />
+                <CollapsibleComponent title="اسئلة واستشارات" articles={articles.slice(2, 4)} />
+                <CollapsibleComponent title="اباء وابناء" articles={articles.slice(4, 8)} />
+                <CollapsibleComponent title="طور ذاتك" articles={articles.slice(8, 10)} />
             </ArticlesContainer>
             <DesktopFooter ref={footerRef}/>
         </Container>
     )
 }
 export default DesktopArticlesPage;
+
+type Article = {
+    id: number;
+    title: string;
+};
+
+type CollapsibleProps = {
+    title: string;
+    articles: Article[];
+};
+
+
+const CollapsibleComponent: React.FC<CollapsibleProps> = ({ title, articles }) => {
+    const [visibility, setVisibility] = useState(false);
+
+    const toggleVisibility = () => {
+        setVisibility(prev => !prev);
+    };
+
+    return (
+        <Columns_container>
+            <Column>
+                <ColumnHeading>
+                    {title}
+                    <ArrowButton onClick={toggleVisibility}>{visibility ? "🔺" : "🔻"}</ArrowButton>
+                </ColumnHeading>
+                <TitlesList isVisible={visibility}>
+                    {articles.map(article => (
+                        <ArticleLink key={article.id} as={Link} to={`/articles/${article.id}`}>
+                            {article.title}
+                        </ArticleLink>
+                    ))}
+                </TitlesList>
+            </Column>
+        </Columns_container>
+    );
+};

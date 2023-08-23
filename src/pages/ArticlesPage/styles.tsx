@@ -3,7 +3,6 @@ import profileImage from "../../assests/self_improve3.jpeg";
 
 
 
-// Add this at the top of your styles.tsx file
 const Colors = {
     primary: '#4F46E5', // A shade of purple
     secondary: '#06D6A0', // A shade of green
@@ -14,6 +13,7 @@ const Colors = {
 const FontFamily = 'Arial, sans-serif';
 
 export const Container = styled.div`
+  background-color: ${Colors.light};
     width: 100%;
     height: 100%;
     display: flex;
@@ -34,18 +34,17 @@ export const ProfileImage = styled.div`
 
 export const ArticlesContainer = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 50px;
+  align-items: flex-start;
   height: fit-content;
-  background-color: ${Colors.light};
-  flex-direction: column;
   flex-direction: column;
   direction: rtl;
   min-height: 720px;
-  padding: 25px;
+  margin: 25px;
+  gap: 10px;
   @media (max-width: 768px) {
       flex-direction: column;
-      padding: 25px;
+      margin: 25px;
   }
 `;
 
@@ -163,9 +162,10 @@ export const FatenContainer = styled.div`
 
 export const Column = styled.div`
     flex: 1;
-    min-width: 300px;
-    padding: 0 15px;
+    min-width: 100%;
+    padding: 0 5px;
     box-sizing: border-box;
+    direction: rtl;
 `;
 
 export const ColumnHeading = styled.h2`
@@ -183,4 +183,43 @@ export const ArticleLink = styled.a`
     &:hover {
         text-decoration: underline;
     }
+`;
+
+export const ArrowButton = styled.span`
+    float: right;
+    cursor: pointer;
+    padding-left: 5px;
+`;
+
+export const Columns_container = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  direction: rtl;
+  @media (max-width: 450px) {
+    width: 80%;
+  }
+`;
+
+export const TitlesList = styled.div<{ isVisible: boolean }>`
+    opacity: ${props => (props.isVisible ? 1 : 0)};
+    max-height: ${props => (props.isVisible ? '1000px' : '0')};
+    overflow: hidden;
+    transition: opacity 0.3s, max-height 0.3s;
+`;
+
+
+export const Content_container = styled.div`
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 50px;
+  height: 100%;
+  text-align: start;
+  direction: rtl;
+  @media (max-width: 450px) {
+    width: 80%;
+  }
 `;

@@ -18,14 +18,18 @@ export const Container = styled.div`
 `
 export const ArticlesContainer = styled.div`
   display: flex;
-  justify-content: center;
+  padding-top: 50px;
   align-items: flex-start;
   height: fit-content;
-  background-color: ${Colors.light};
   flex-direction: column;
   direction: rtl;
   min-height: 720px;
-  padding: 80px;  
+  margin: 25px;
+  gap: 10px;
+  @media (max-width: 768px) {
+      flex-direction: column;
+      margin: 25px;
+  }
 `;
 
 export const ArticlesDesc = styled.div`
@@ -125,4 +129,44 @@ export const ArticleLink = styled.a`
     &:hover {
         text-decoration: underline;
     }
+`;
+
+
+export const ArrowButton = styled.span`
+    float: right;
+    cursor: pointer;
+    padding-left: 5px;
+`;
+
+export const Columns_container = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  height: 100%;
+  direction: rtl;
+  @media (max-width: 450px) {
+    width: 80%;
+  }
+`;
+
+export const TitlesList = styled.div<{ isVisible: boolean }>`
+    opacity: ${props => (props.isVisible ? 1 : 0)};
+    max-height: ${props => (props.isVisible ? '1000px' : '0')};
+    overflow: hidden;
+    transition: opacity 0.3s, max-height 0.3s;
+`;
+
+
+export const Content_container = styled.div`
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 50px;
+  height: 100%;
+  text-align: start;
+  direction: rtl;
+  @media (max-width: 450px) {
+    width: 80%;
+  }
 `;
